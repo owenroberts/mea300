@@ -12,7 +12,7 @@ dek: Schedule with class notes & assignments
 **Introduction to Game Design**
 
 - [Introduction to Game Design](week1/)
-- Reading: [Crawford - Chapter 1](readings/crawford.pdf)
+- **Reading**: [Crawford - Chapter 1](readings/crawford.pdf)
 - [Publishing on Medium](week1/medium.html)
 - **Blog Response**: What is a game?
 - **Lab**: Set up development environment
@@ -31,7 +31,8 @@ dek: Schedule with class notes & assignments
 ## Week 2
 **Character Design**
 - [Character Design](week2/)
-- Reading: [McCloud - Chapter 2](readings/mccloud.pdf)
+- **Reading**: [McCloud - Chapter 2](readings/mccloud.pdf)
+- **Blog Response**: Write about a video game character and how it fits into the realism - cartoon spectrum.
 - **Lab**: Add character to game
 	- Events and input
 - **Assignemnt 2**
