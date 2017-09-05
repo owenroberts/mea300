@@ -3,7 +3,7 @@ layout: default
 title: MEA 300 - Game Design - Home
 desk: Class info, notes and schedule
 ---
-# MMP 300: Game Design
+# MEA 300: Game Design
 
 [Home](index.html) [Schedule](schedule.html)
 
