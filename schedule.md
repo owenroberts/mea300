@@ -28,25 +28,35 @@ dek: Schedule with class notes & assignments
 	- Use screen shots to show how they are represented visually
 	- Write short descriptions of each and how they work in the game
 
-<!-- 
 ## Week 2
 **Character Design**
-- [Characters]
+- [Character Design](week2/)
 - Reading: [McCloud - Chapter 2](readings/mccloud.pdf)
 - **Lab**: Add character to game
 	- Events and input
 - **Assignemnt 2**
+	- Concept design for main character in video game
 	- At least 5 sketches
 	- Digital version of favorite sketch
 	- Design main character for endless runner game
 	- Create sprites for idle, running, jumping states
 	- Post screen shots / photos of everything on the blog
 
--->
 
 <!-- 
 http://owenroberts.github.io/videogames/week8/index.html
 http://imranunit40.blogspot.com/2015/05/goals-challenges-and-rewards.html
 http://jeremycouillard.com/newMedia/gameDesign.html
 http://graysonearle.com/edu/gamepro/
+
+week 2
+- had history and graphics - could talk about this a bit more....
+
+week 3 
+- game genre and setting?
+- should be separate weeks?
+
+week 4
+- games and art, maybe not necessary
+
  -->
