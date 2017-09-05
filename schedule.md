@@ -20,6 +20,7 @@ dek: Schedule with class notes & assignments
 	- Basic HTML/CSS page
 	- [Download p5.js](https://github.com/processing/p5.js/releases/download/0.5.14/p5.min.js)
 	- [Download p5.play](https://github.com/molleindustria/p5.play/archive/master.zip)
+	- [Week 1 Lab](week1/lab/) & [files](https://github.com/owenroberts/mea300/tree/master/week1/lab)
 - **Assignment 1**
 	- Write a post on the class blog
 	- Choose a game that you are currently playing or played recently
