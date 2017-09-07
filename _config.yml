@@ -1,0 +1,7 @@
+description: mea 300 class website
+baseurl: /mea300
+# Exclude these files from your production _site
+exclude:
+  - README.md
+  - mea300_flyer/
+  - update.sh
