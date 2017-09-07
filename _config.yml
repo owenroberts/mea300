@@ -1,4 +1,5 @@
 description: mea 300 class website
+# http://downtothewire.io/2015/08/15/configuring-jekyll-for-user-and-project-github-pages/
 baseurl: /mea300
 # Exclude these files from your production _site
 exclude:
