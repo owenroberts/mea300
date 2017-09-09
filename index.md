@@ -22,7 +22,7 @@ The class notes, schedule and assignments are all found here.
 - Email: oroberts AT bmcc DOT cuny  DOT edu
 - Office: S622J
 - Office extension: 8057
-- Office hours: TBD
+- Office hours: Tuesday 1pm - 3pm, Thursday 2pm - 3pm, Wednesday afternoon by appointment
 - Class times: Tuesday & Thursday 3:45 - 5:25pm
 - 199 Chambers room N550
 

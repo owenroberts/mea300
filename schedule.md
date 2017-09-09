@@ -61,4 +61,43 @@ week 3
 week 4
 - games and art, maybe not necessary
 
+
+week 5 
+- internet art, interactive art
+- maybe nah?
+
+
+week 6 
+- emergence of online games
+
+week 7 
+- midterm
+
+week 8
+- group assignment
+- collaboratin
+- github
+
+week 9 
+- storytelling in games
+- emergent vs progressive games
+- game worlds
+
+week 10 
+- sound
+
+week 11
+- prototyping
+
+week 12 
+- user testing
+
+week 13
+- iterating on design and features
+
+week 14-15
+- final workshop
+
+randomness
+
  -->
