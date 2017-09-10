@@ -21,6 +21,7 @@ dek: Schedule with class notes & assignments
 	- [Download p5.js](https://github.com/processing/p5.js/releases/download/0.5.14/p5.min.js)
 	- [Download p5.play](https://github.com/molleindustria/p5.play/archive/master.zip)
 	- [Week 1 Lab](week1/lab/) & [files](https://github.com/owenroberts/mea300/tree/master/week1/lab)
+	- [Lab Notes](week1/lab.html)
 - **Assignment 1**
 	- Write a post on the class blog
 	- Choose a game that you are currently playing or played recently
@@ -35,8 +36,10 @@ dek: Schedule with class notes & assignments
 - **Reading**: [McCloud - Chapter 2](readings/mccloud.pdf)
 - **Blog Response**: Write about a video game character and how it fits into the realism - cartoon spectrum.
 - **Lab**: Add character to game
+	- Sprites, image and animation
 	- Events and input
-- **Assignemnt 2**
+	- [Lab](week2/lab/) & [files](https://github.com/owenroberts/mea300/tree/master/week2/lab)
+- **Assignment 2**
 	- Concept design for main character in video game
 	- At least 5 sketches
 	- Digital version of favorite sketch
