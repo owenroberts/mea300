@@ -1,6 +1,6 @@
 ---
 layout: default
-title: MEA 300 = Schedule
+title: MEA 300 ~ Schedule
 dek: Schedule with class notes & assignments
 ---
 # Schedule
