@@ -47,6 +47,17 @@ dek: Schedule with class notes & assignments
 	- Create sprites for idle, running, jumping states
 	- Post screen shots / photos of everything on the blog
 
+## Week 3
+**Game Setting**
+- [Game Setting](week3/)
+- **Assignment 3**
+	- Design scenic assets for your game
+	- Using a similar or related aesthetic style of your character create sprite images for the game setting
+	- Create at least 2 backgrounds
+	- Create at least 1 foreground element
+	- Create at least 2 platforms that the player can stand on
+	- Create at least 3 more scenic elements (trees, clouds, street lamps etc)
+	- Post screen shots / photos of everything on the blog
 
 <!-- 
 http://owenroberts.github.io/videogames/week8/index.html
