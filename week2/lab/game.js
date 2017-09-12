@@ -4,7 +4,7 @@ const speed = 5;
 
 function setup() {
     createCanvas(640, 360);
-    character = createSprite(20, 20, 32, 32);
+    character = createSprite(20, 20, 64, 64);
     
     /* still images
     const idle_img = loadImage("assets/idle.png");
@@ -24,6 +24,7 @@ function draw() {
     background("white");
     
     /* keyboard events */
+    // slidingMovement();
     constantMovement();
     
     if (keyIsPressed) {

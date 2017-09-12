@@ -39,6 +39,7 @@ dek: Schedule with class notes & assignments
 	- Sprites, image and animation
 	- Events and input
 	- [Lab](week2/lab/) & [files](https://github.com/owenroberts/mea300/tree/master/week2/lab)
+	- [Lab notes](week2/lab.html)
 - **Assignment 2**
 	- Concept design for main character in video game
 	- At least 5 sketches
