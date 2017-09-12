@@ -1,5 +1,5 @@
 ---
-layout: slides
+layout: page
 title: MEA 300
 week: 2
 dek: Lab Notes
@@ -7,7 +7,7 @@ dek: Lab Notes
 
 This week we added a main character into the game and gave it some controls with the keyboard.  We covered a bunch of new topics including variables/data storage, object methods, defined functions, logic and events.  Here I'll walk through the code we wrote and talk more in depth about some of these concepts.
 
-Here's the beginning of the program:
+## variables
 
 ```
 /* global variable */
@@ -30,7 +30,7 @@ Next is a variable declaration for the main character.  The `character` needs to
 
 Then we created a speed value for our character using the `const` declaration.  `const` means that the value isn't going to change.  Right now our character can only move at one speed, but if we were to change the speed by making the character slower or faster, we would have to change this to `var` or `let`.  (Side note: technically, we should be using `let` instead of `var` here, but I'm still getting used to it...)
 
-Next we have:
+## setup & loading images/animation
 
 ```
 function setup() {
@@ -62,6 +62,8 @@ We also treid adding animation.  The `loadAnimation` function has different ways
 
 `addAnimation` works the same way as `addImage`, it uses a label and the variable with the animation data as arguments.
 
+## draw & events
+
 ```
 function draw() {
     background("white");
@@ -74,6 +76,8 @@ function draw() {
 We've seen the `draw` function before as well.  `background("white");` is new and it's relatively obvious how it works.  It paints the background of the `canvas` white.  `background` is a `p5` function that can take HTML color values, HTML hex values, or numerical values, 0-255 for grayscale, and 3 arguments for RGB.  Check out the [background](https://p5js.org/reference/#/p5/background) documentation here.
 
 Then we have our keyboard events section, which we divided into two separate functions. Looking back, we probably should have just stuck with constant movement and saved sliding movement for the physics lab, but that's okay.  We have `slidingMovement` commented out because we weren't using it, but didn't want to delete it.  We are calling `constantMovement()` to call the function which is defined later.
+
+
 
 ```
     if (keyIsPressed) {
@@ -93,6 +97,8 @@ Here's an `if` statement!  This was our first look at logic.  An `if` statement 
 ```
 
 The end of our program is the same as last week, we use the `drawSprites` function to draw all of the sprites in the game.
+
+## movement functions
 
 ```
 function constantMovement() {
@@ -135,3 +141,5 @@ function slidingMovement() {
     }
 }
 ```
+
+The `slidingMovement` function works similarly to the `constantMovement` function but instead of changing the character's position it changed the `velocity`.  Like `position`, `velocity` is a `vector` but it describes the rate of change of the position on the `x` and `y` access.  So, for each frame, if the `velocity.x` is equal to `1`, the `position.x` with increase by `1`.  The sprite has it's own internal function that updates the position based on the velocity.

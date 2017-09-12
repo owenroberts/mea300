@@ -1,12 +1,14 @@
 <!DOCTYPE html>  
 <html>  
 <head> 
-<title>{{page.title}}</title>
+<title>{{page.title}} ~ Week {{page.week}} ~ {{page.dek}}</title>
 {% include meta.html %}
 {% include base.html %}
 </head>  
 <body>	
-	<div  id="container" class="outline noslides">
+	<div id="container" class="outline noslides">
+		<h1>{{page.dek}}</h1>
+		<p><a href="{{site.url}}{{site.baseurl}}/">MEA 300</a> > <a href="{{site.url}}{{site.baseurl}}/schedule.html#week-{{page.week}}">Week {{page.week}}</a></p>
 		{{ content }}
 	</div>
 </body>  

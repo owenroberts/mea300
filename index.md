@@ -11,9 +11,10 @@ This is the class page of MEA 300 at BMCC.
 
 The class notes, schedule and assignments are all found here.
 <ul>
-	<li><a href="https://docs.google.com/document/d/1NSgIqeiew5Jrap1xUjwmvWuU1OP0GduUfIArsi4jDTQ/edit?usp=sharing" target="blank">Class syllabus</a></li>
-	<li><a href="https://mea300.slack.com/" target="blank">Class slack channel</a></li>
-	<li><a href="https://medium.com/mea-300-game-design" target="blank">Class blog</a></li>
+	<li><a href="https://docs.google.com/document/d/1NSgIqeiew5Jrap1xUjwmvWuU1OP0GduUfIArsi4jDTQ/edit?usp=sharing" target="blank">Syllabus</a></li>
+	<li><a href="https://mea300.slack.com/" target="blank">Slack channel</a></li>
+	<li><a href="https://medium.com/mea-300-game-design" target="blank">Blog</a></li>
+	<li><a href="http://piratepad.net/mea300" target="blank">Pirate pad</a></li>
 </ul>
 
 
