@@ -50,6 +50,8 @@ dek: Schedule with class notes & assignments
 ## Week 3
 **Game Setting**
 - [Game Setting](week3/)
+- **Reading**: [The Designer's Notebook: Sorting Out the Genre Muddle](https://www.gamasutra.com/view/feature/132463/the_designers_notebook_sorting_.php)
+- **Blog Response**: What is your favorite game genre?  (If you don't have one, why not?)
 - **Assignment 3**
 	- Design scenic assets for your game
 	- Using a similar or related aesthetic style of your character create sprite images for the game setting
