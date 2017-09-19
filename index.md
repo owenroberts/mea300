@@ -1,7 +1,7 @@
 ---
 layout: default
-title: MEA 300 - Game Design - Home
-desk: Class info, notes and schedule
+title: MEA 300 ~ Game Design ~ Home
+dek: Class info, notes and schedule
 ---
 # MEA 300: Game Design
 

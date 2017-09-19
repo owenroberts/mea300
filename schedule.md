@@ -3,14 +3,13 @@ layout: default
 title: MEA 300 ~ Schedule
 dek: Schedule with class notes & assignments
 ---
-# Schedule
+# MEA 300: Schedule
 
 [Home](index.html) [Schedule](schedule.html)
 
 
 ## Week 1
 **Introduction to Game Design**
-
 - [Introduction to Game Design](week1/)
 - **Reading**: [Crawford - Chapter 1](readings/crawford.pdf)
 - [Publishing on Medium](week1/medium.html)
@@ -61,6 +60,19 @@ dek: Schedule with class notes & assignments
 	- Create at least 2 platforms that the player can stand on
 	- Create at least 3 more scenic elements (trees, clouds, street lamps etc)
 	- Post screen shots / photos of everything on the blog
+
+## Week 4
+**Game Genre**
+- [Game Genre](week4/)
+- **Reading**: Watch [Early Video Game History](https://www.youtube.com/watch?v=uuxoThzFPPw) and [A Brief History of Video Games](https://www.youtube.com/watch?v=GoyGlyrYb9c) and look at [Video Game History Timeline](http://www.museumofplay.org/about/icheg/video-game-history/timeline)
+- **Blog**: Reflect on the relationship between technology and games based on the readings (viewings)
+- **Assignment 4**
+	- Design 5 potential *obstacles* for your game
+	- Sketches/pixel art/Illustrator art all okay
+	- Explain how the obstacles interact with character
+	- Post images and explanations on blog
+
+
 
 <!-- 
 http://owenroberts.github.io/videogames/week8/index.html
