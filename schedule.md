@@ -37,8 +37,7 @@ dek: Schedule with class notes & assignments
 - **Lab**: Add character to game
 	- Sprites, image and animation
 	- Events and input
-	- [Lab](week2/lab/) & [files](https://github.com/owenroberts/mea300/tree/master/week2/lab)
-	- [Lab notes](week2/lab.html)
+	- [Lab](week2/lab/) & [code](https://github.com/owenroberts/mea300/tree/master/week2/lab) & [notes](week2/lab.html)
 - **Assignment 2**
 	- Concept design for main character in video game
 	- At least 5 sketches
@@ -52,6 +51,10 @@ dek: Schedule with class notes & assignments
 - [Game Setting](week3/)
 - **Reading**: [The Designer's Notebook: Sorting Out the Genre Muddle](https://www.gamasutra.com/view/feature/132463/the_designers_notebook_sorting_.php)
 - **Blog Response**: What is your favorite game genre?  (If you don't have one, why not?)
+- **Lab**
+	- Platform, foreground and background elements
+	- Loops, booleans and random
+	- [Lab](week3/lab/) & [code](https://github.com/owenroberts/mea300/tree/master/week3/lab) & [notes](week3/lab.html)
 - **Assignment 3**
 	- Design scenic assets for your game
 	- Using a similar or related aesthetic style of your character create sprite images for the game setting
