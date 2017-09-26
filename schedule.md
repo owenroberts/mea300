@@ -1,11 +1,10 @@
 ---
-layout: default
+layout: main
 title: MEA 300 ~ Schedule
 dek: Schedule with class notes & assignments
 ---
-# MEA 300: Schedule
 
-[Home](index.html) [Schedule](schedule.html)
+Go to [Home](index.html)
 
 
 ## Week 1
@@ -74,20 +73,26 @@ dek: Schedule with class notes & assignments
 	- Explain how the obstacles interact with character
 	- Post images and explanations on blog
 
-
+## Week 5
+- [Video Games & Art](week5/)
+- **Reading**: Play [Syoban Action](https://int3.github.io/open-syobon-action.js/)
+- **Blog**: How does Syoban Action play with video game expectations?
+- **Assignment 5**
+	- Design 5 potential *rewards* for your game
+	- Same idea as Assignment 4
+	- Post screen shots and explanation of how each reward could help the player advance in the game
+	- Post on Medium
 
 <!-- 
 http://owenroberts.github.io/videogames/week8/index.html
 http://imranunit40.blogspot.com/2015/05/goals-challenges-and-rewards.html
 http://jeremycouillard.com/newMedia/gameDesign.html
 http://graysonearle.com/edu/gamepro/
+	- https://www.primagames.com/games/super-mario-3d-world/feature/15-greatest-moments-sega-and-nintendo-16-bit-console-war
+	- http://keithburgun.net/randomness-and-game-design/
 
-week 2
-- had history and graphics - could talk about this a bit more....
 
-week 3 
-- game genre and setting?
-- should be separate weeks?
+
 
 week 4
 - games and art, maybe not necessary

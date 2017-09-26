@@ -1,22 +1,17 @@
 ---
-layout: default
+layout: main
 title: MEA 300 ~ Game Design ~ Home
 dek: Class info, notes and schedule
 ---
-# MEA 300: Game Design
-
-[Home](index.html) [Schedule](schedule.html)
 
 This is the class page of MEA 300 at BMCC.
 
 The class notes, schedule and assignments are all found here.
-<ul>
-	<li><a href="https://docs.google.com/document/d/1NSgIqeiew5Jrap1xUjwmvWuU1OP0GduUfIArsi4jDTQ/edit?usp=sharing" target="blank">Syllabus</a></li>
-	<li><a href="https://mea300.slack.com/" target="blank">Slack channel</a></li>
-	<li><a href="https://medium.com/mea-300-game-design" target="blank">Blog</a></li>
-	<li><a href="http://piratepad.net/mea300" target="blank">Pirate pad</a></li>
-</ul>
-
+- [Schedule](schedule.html)
+- <a href="https://docs.google.com/document/d/1NSgIqeiew5Jrap1xUjwmvWuU1OP0GduUfIArsi4jDTQ/edit?usp=sharing" target="blank">Syllabus</a>
+- <a href="https://mea300.slack.com/" target="blank">Slack channel</a>
+- <a href="https://medium.com/mea-300-game-design" target="blank">Blog</a>
+- <a href="http://piratepad.net/mea300" target="blank">Pirate pad</a>
 
 ## Fall 2017
 - Instructor: Owen Roberts
