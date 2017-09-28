@@ -78,6 +78,10 @@ Go to [Home](index.html)
 - [Video Games & Art](week5/)
 - **Reading**: Play [Syoban Action](https://int3.github.io/open-syobon-action.js/)
 - **Blog**: How does Syoban Action play with video game expectations?
+- **Lab**
+	- Groups, loops
+	- collides & overlap
+	- [Lab](week5/lab/) & [code](https://github.com/owenroberts/mea300/tree/master/week3/lab)
 - **Assignment 5**
 	- Design 5 potential *rewards* for your game
 	- Same idea as Assignment 4
