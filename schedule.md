@@ -81,7 +81,7 @@ Go to [Home](index.html)
 - **Lab**
 	- Groups, loops
 	- collides & overlap
-	- [Lab](week5/lab/) & [code](https://github.com/owenroberts/mea300/tree/master/week3/lab)
+	- [Lab](week5/lab/) & [code](https://github.com/owenroberts/mea300/tree/master/week5/lab)
 - **Assignment 5**
 	- Design 5 potential *rewards* for your game
 	- Same idea as Assignment 4
