@@ -88,7 +88,17 @@ Go to [Home](index.html)
 	- Post screen shots and explanation of how each reward could help the player advance in the game
 	- Post on Medium
 
+## Week 6
+- [Indie games]
+- **Reading**: 
+
 <!-- 
+
+week 7
+browser games
+
+week 8 
+
 http://owenroberts.github.io/videogames/week8/index.html
 http://imranunit40.blogspot.com/2015/05/goals-challenges-and-rewards.html
 http://jeremycouillard.com/newMedia/gameDesign.html
