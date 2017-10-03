@@ -1,6 +1,6 @@
 /* global variable */
 var character;
-var platforms;
+var platforms, platform;
 var clouds, walls, enemies, health, stuff;
 const NUM_BUSHES = 8, NUM_CLOUDS = 5, NUM_WALLS = 3, NUM_ENEMIES = 3, NUM_HEALTH = 1;
 const SPEED = 5;
@@ -11,6 +11,7 @@ function setup() {
     createCanvas(640, 360);
     
 	/* character setup */
+
 	character = createSprite(20, 20, 16, 16);
     const idle_anim = loadAnimation("assets/idle/idle_00.png", "assets/idle/idle_09.png");
     const run_anim = loadAnimation("assets/run/run_0.png", "assets/run/run_5.png");
@@ -22,13 +23,26 @@ function setup() {
 	stuff = new Group();
 	stuff.add(character);
 	
-	/* platform setup */
-	let platform1 =  createSprite(0, height - 10, width, 20);
-	let platform2 =  createSprite(width, height - 10, width, 20);
 	platforms = new Group();
-	platforms.add(platform1);
-	platforms.add(platform2);
+	/* platform setup */
+	// let platform1 =  createSprite(0, height - 10, width, 20);
+	// let platform2 =  createSprite(width, height - 10, width, 20);
+	// 
+	// platforms.add(platform1);
+	// platforms.add(platform2);
 	//platform.debug = true;
+
+	platform = createSprite(0, height - 10, width * 2, 20);
+	platforms.add(platform);
+
+	console.log(platform.constructor);
+	platform.constructor.wrap = function(dist, reset) {
+		if (character.position.x - this.position.x >= dist) {
+			this.position.x = reset;
+		}
+	}
+
+
 
 	walls = new Group();
 	for (let i = 0; i < NUM_WALLS; i++) {
@@ -85,8 +99,11 @@ function setup() {
 		);
 		health.add(life);
 	}
-    
+
+
+
 }
+
 
 function draw() {
     background("white");
@@ -120,11 +137,15 @@ function draw() {
 	}
 	
 	//character.collide(walls);
+	// console.log(enemies[0].position.x);
 	for (let i = 0; i < enemies.length; i++) {
 		const enemy = enemies[i];
+
 		if (character.overlap(enemy)) {
 			character.lives--;
-			enemy.remove();
+			enemy.position.x = character.position.x + random(width, width*2);
+		} else if (enemy.position.x < character.position.x - width) {
+			enemy.position.x = character.position.x + random(width, width*2);
 		}
 	}
 	
@@ -145,6 +166,11 @@ function draw() {
 			//console.log(p.position.x);
 		}
 	}
+
+	// if (character.position.x - platform.position.x >= width/2) {
+	// 	platform.position.x += width;
+	// }
+	// platform.wrap(width/2, width);
     
     camera.position.x = character.position.x;
 
@@ -152,10 +178,10 @@ function draw() {
     drawSprites(stuff);
     drawSprites(walls);
     drawSprites(enemies);
-    drawSprites(health);
+    //drawSprites(health);
     drawSprites(platforms);
     camera.off();
-    drawSprites(clouds);
+    //drawSprites(clouds);
 	/* ui */
 	text("Lives: " + character.lives, 10, 20);
 }
