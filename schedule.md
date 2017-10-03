@@ -89,15 +89,34 @@ Go to [Home](index.html)
 	- Post on Medium
 
 ## Week 6
-- [Indie games]
-- **Reading**: 
+- [Indie games](week6/indie.html)
+- **Reading**: Find a game on <a href="https://itch.io/" target="blank">itch.io</a> to play
+- **Blog**: Write about the game you found, take screen shots of goals, obstacles and rewards
+- **Lab**
+	- Camera
+	- Scenes
+- **Assignment 6**
+	- Add all of the visual assets to the game
+	- Take screen shots/video of the game in progress
+	- Post on the Medium blog
+	- Write about how the rewards and obstacles interact with the player/character
+	
 
 <!-- 
 
 week 7
-browser games
+sound
 
 week 8 
+midterm workshop
+
+
+week 9
+browser games
+choose final groups
+
+
+
 
 http://owenroberts.github.io/videogames/week8/index.html
 http://imranunit40.blogspot.com/2015/05/goals-challenges-and-rewards.html
