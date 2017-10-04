@@ -7,6 +7,14 @@ const SPEED = 5;
 const JUMP_SPEED = SPEED * 2;
 const GRAVITY = 0.5;
 
+var gameState = 0;
+/*
+0 intro page
+1 instructions
+2 game
+3 you died
+*/
+
 function setup() {
     createCanvas(640, 360);
     
@@ -100,6 +108,47 @@ function setup() {
 
 
 function draw() {
+	if (gameState == 0) {
+		intro();
+	} else if (gameState == 1) {
+		instructions();
+	} else if (gameState == 2) {
+		game();
+	} else if (gameState == 3) {
+		dead();
+	}
+}
+
+function intro() {
+	background(100);
+	fill(255);
+	text("demo game", width/2, height/2);
+	text("enter to start", width/2, height/2 + 20);
+	if (keyWentUp("ENTER")) {
+		gameState++;
+	}
+}
+
+function instructions() {
+	background(200);
+	text("arrow keys to move", width/2, height/2);
+	text("x to jump", width/2, height/2 + 20);
+	text("enter to start", width/2, height/2 + 40);
+	if (keyWentUp("ENTER")) {
+		gameState++;
+	}
+}
+function dead() {
+	background(0);
+	fill(255);
+	text("you died", width/2, height/2);
+	text("enter to try again", width/2, height/2 + 20);
+	if (keyWentUp("ENTER")) {
+		gameState++;
+	}
+}
+
+function game() {
     background("white");
 	
 	for (let i = 0; i < clouds.length; i++) {
@@ -182,6 +231,10 @@ function draw() {
     //drawSprites(clouds);
 	/* ui */
 	text("Lives: " + character.lives, 10, 20);
+
+	if (character.lives <= 0) {
+		gameState++;
+	}
 }
 
 function wrap(obj, dist, reset) {
