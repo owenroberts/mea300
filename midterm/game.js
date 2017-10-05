@@ -1,13 +1,15 @@
 /* global variable */
 var character;
-var platforms, platform;
-var clouds, walls, enemies, health, stuff;
-const NUM_BUSHES = 8, NUM_CLOUDS = 5, NUM_WALLS = 5, NUM_ENEMIES = 10, NUM_HEALTH = 1;
+var platform;
+const PLATFORM_HEIGHT = 20;
+var clouds, walls, enemies, health, stuff, trees;
+const NUM_TREES = 8, NUM_CLOUDS = 5, NUM_WALLS = 5, NUM_ENEMIES = 10, NUM_HEALTH = 1;
 const SPEED = 5;
 const JUMP_SPEED = SPEED * 2;
 const GRAVITY = 0.5;
 
 var gameState = 0;
+var score = 0;
 /*
 0 intro page
 1 instructions
@@ -19,73 +21,65 @@ function setup() {
     createCanvas(640, 360);
     
 	/* character setup */
-
 	character = createSprite(20, 20, 16, 16);
     const idle_anim = loadAnimation("assets/idle/idle_00.png", "assets/idle/idle_09.png");
     const run_anim = loadAnimation("assets/run/run_0.png", "assets/run/run_5.png");
     character.addAnimation("idle", idle_anim);
     character.addAnimation("run", run_anim);
-	character.debug = true;
 	character.isJumping = true;
 	character.lives = 3;
 	stuff = new Group();
-	character.setCollider("circle", 0, 0, 16);
+	//character.setCollider("circle", 0, 0, 16);
+	character.setCollider("rectangle", -4, 0, 16, 32);
 	stuff.add(character);
 	
-	platforms = new Group();
-	/* platform setup */
-	// let platform1 =  createSprite(0, height - 10, width, 20);
-	// let platform2 =  createSprite(width, height - 10, width, 20);
-	// 
-	// platforms.add(platform1);
-	// platforms.add(platform2);
-	//platform.debug = true;
 
-
-	platform = createSprite(0, height - 10, width * 2, 20);
-	platform.debug = true;
-	platforms.add(platform);
+	platform = createSprite(0, height - PLATFORM_HEIGHT/2, width * 2, PLATFORM_HEIGHT);
+	platform.name = "platform";
+	stuff.add(platform);
 
 	walls = new Group();
 	for (let i = 0; i < NUM_WALLS; i++) {
 		const wall = createSprite(
 			random(32, width), 
-			height * 7/8, 
+			height * 7/8 - PLATFORM_HEIGHT/2, 
 			40, 
-			height/4
+			height/4 - PLATFORM_HEIGHT
 		);
 		walls.add(wall);
 	}
 	
-	for (let i = 0; i < NUM_BUSHES; i++	) {
-		createSprite(
+	trees = new Group();
+	for (let i = 0; i < NUM_TREES; i++	) {
+		const tree = createSprite(
 			random(0, width), 
 			random(height-20, height), 
-			random(10, 60), 
-			random(50, 100)
+			random(1, 6), 
+			random(5, 100)
 		);
+		trees.add(tree);
 	}
 	
 	clouds = new Group();
 	for (let i = 0; i < NUM_CLOUDS; i++) {
 		const cloud = createSprite(
-			random(width, width * 2),
+			random(0, width * 2),
 			random(0, height/2),
-			random(50,100),
-			random(20,40)
+			random(5,100),
+			random(2,4)
 		);
-		cloud.velocity.x = -random(1, 2);
+		cloud.velocity.x = -random(.1, 1);
 		clouds.add(cloud);
 	}
 	
 	enemies = new Group();
 	for (let i = 0; i < NUM_ENEMIES; i++) {
-		const sz = random(20,40);
+		const sz = random(20,60);
 		const enemy = createSprite(
 			random(width * 2, width * 6),
 			random(height/2, height * 7.5/8),
 			sz,
-			sz
+			sz/2
 		);
 		enemy.velocity.x = -random(1, 5);
 		enemies.add(enemy);
@@ -96,7 +90,7 @@ function setup() {
 		const life = createSprite(
 			random(0, width),
 			random(height/2, height),
-			30,
+			20,
 			20
 		);
 		health.add(life);
@@ -105,7 +99,6 @@ function setup() {
 
 
 }
-
 
 function draw() {
 	if (gameState == 0) {
@@ -120,6 +113,7 @@ function draw() {
 }
 
 function intro() {
+	camera.off();
 	background(100);
 	fill(255);
 	text("demo game", width/2, height/2);
@@ -130,6 +124,7 @@ function intro() {
 }
 
 function instructions() {
+	camera.off();
 	background(200);
 	text("arrow keys to move", width/2, height/2);
 	text("x to jump", width/2, height/2 + 20);
@@ -139,17 +134,20 @@ function instructions() {
 	}
 }
 function dead() {
+	camera.off();
 	background(0);
 	fill(255);
 	text("you died", width/2, height/2);
 	text("enter to try again", width/2, height/2 + 20);
 	if (keyWentUp("ENTER")) {
-		gameState++;
+		gameState = 1;
+		character.lives = 3;
 	}
 }
 
 function game() {
     background("white");
+    camera.on();
 	
 	for (let i = 0; i < clouds.length; i++) {
 		const cloud = clouds[i];
@@ -158,16 +156,21 @@ function game() {
 			cloud.position.y = random(0, height/2);
 		}
 	}
+
+	for (let i = 0; i < trees.length; i++) {
+		const tree = trees[i];
+		wrap(tree, random(width, width*3));
+	}
     
     /* keyboard events */
     constantMovement();
     
-	if (character.collide(platforms) || character.collide(walls)) {
-		character.velocity.y = 0;
+	if (character.collide(platform) || character.collide(walls)) {
+		if (character.velocity.y > 0) 
+			character.velocity.y = 0;
 		if (character.isJumping) {
 			character.isJumping = false;
 		}
-		
 	} else {
 		character.velocity.y += GRAVITY;
 	}
@@ -189,7 +192,7 @@ function game() {
 			character.lives--;
 			enemy.position.x = character.position.x + random(width, width*2);
 		} else {
-			wrap(enemy, width, random(width * 2, width * 5));
+			wrap(enemy, random(width * 2, width * 5));
 		}
 	}
 	
@@ -199,26 +202,16 @@ function game() {
 			character.lives ++;
 			life.position.x += random(width, width * 2);
 		} else {
-			wrap(life, width, random(width * 2, width * 4));
-		}
-	}
-
-	// platforms not moving dummy
-	for (let i = 0; i < platforms.length; i++) {
-		const p = platforms[i];
-		//console.log(p.position.x, -width);
-		if (p.position.x < -width) {
-			p.position.x = width;
-			//console.log(p.position.x);
+			wrap(life, random(width * 2, width * 4));
 		}
 	}
 
 	for (let i = 0; i < walls.length; i++) {
-		wrap(walls[i], width, random(width * 2, width * 4));
+		wrap(walls[i], random(width * 3, width * 5));
 	}
 
 
-	wrap(platform, width/2, width);
+	wrap(platform, width);
     
     camera.position.x = character.position.x;
 
@@ -226,19 +219,25 @@ function game() {
     drawSprites(walls);
   	drawSprites(enemies);
     drawSprites(health);
-    drawSprites(platforms);
+    drawSprites(trees);
     camera.off();
-    //drawSprites(clouds);
+    drawSprites(clouds);
 	/* ui */
+	fill(0);
 	text("Lives: " + character.lives, 10, 20);
+	text("Score: " + score, width - 60, 20);
 
 	if (character.lives <= 0) {
 		gameState++;
+		score = 0;
+		character.velocity.y = 0;
 	}
 }
 
-function wrap(obj, dist, reset) {
-	if (character.position.x - obj.position.x >= dist) {
+function wrap(obj, reset) {
+	if (character.position.x - obj.position.x >= width/2) {
+		if (obj.name == "platform")
+			score++;
 		obj.position.x += reset;
 	}
 }
@@ -246,8 +245,11 @@ function wrap(obj, dist, reset) {
 function constantMovement() {
     if (keyDown(RIGHT_ARROW)) {
         character.position.x += SPEED;
-    }
-    if (keyDown(LEFT_ARROW)) {
+        character.changeAnimation("run");
+    } else  if (keyDown(LEFT_ARROW)) {
         character.position.x -= SPEED;
+        character.changeAnimation("run");
+    } else {
+    	character.changeAnimation("idle");
     }
 }
