@@ -74,6 +74,7 @@ Go to [Home](index.html)
 	- Post images and explanations on blog
 
 ## Week 5
+**Video games and art**
 - Present Midterm game ideas
 - [Video Games & Art](week5/)
 - **Reading**: Play [Syoban Action](https://int3.github.io/open-syobon-action.js/)
@@ -89,6 +90,7 @@ Go to [Home](index.html)
 	- Post on Medium
 
 ## Week 6
+**Indie games**
 - [Indie games](week6/indie.html)
 - **Reading**: Find a game on <a href="https://itch.io/" target="blank">itch.io</a> to play
 - **Blog**: Write about the game you found, take screen shots of goals, obstacles and rewards
@@ -102,22 +104,28 @@ Go to [Home](index.html)
 	- Post on the Medium blog
 	- Write about how the rewards and obstacles interact with the player/character
 	
+## Week 7
+**Sound**
+- [Sound effects](week7/sound.html)
+- **Blog**: Using the game from week 6, write about the sounds accompanying the obstacles and rewards in the game
+- **Lab**
+	- Sound w <a href="https://jfxr.frozenfractal.com/" target="blank">jfxr</a>
+	- Selecting random sounds/images
+- **Assignment 7**
+	- Add sounds to game
+	- Using <a href="https://jfxr.frozenfractal.com/" target="blank">jfxr</a>, <a href="http://thirdcog.eu/apps/cfxr" target="blank">cfxr</a>, or other software
+	- Start working on midterm
+
+## Week 8
+**Midterm**
+- In class workshops to finish up Midterm
 
 <!-- 
 
-week 7
-sound
-
-week 8 
-midterm workshop
-
-
 week 9
-browser games
+browser games - emergence of online games
+
 choose final groups
-
-
-
 
 http://owenroberts.github.io/videogames/week8/index.html
 http://imranunit40.blogspot.com/2015/05/goals-challenges-and-rewards.html
@@ -125,24 +133,6 @@ http://jeremycouillard.com/newMedia/gameDesign.html
 http://graysonearle.com/edu/gamepro/
 	- https://www.primagames.com/games/super-mario-3d-world/feature/15-greatest-moments-sega-and-nintendo-16-bit-console-war
 	- http://keithburgun.net/randomness-and-game-design/
-
-
-
-
-week 4
-- games and art, maybe not necessary
-
-
-week 5 
-- internet art, interactive art
-- maybe nah?
-
-
-week 6 
-- emergence of online games
-
-week 7 
-- midterm
 
 week 8
 - group assignment
