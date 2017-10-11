@@ -17,6 +17,23 @@ var score = 0;
 3 you died
 */
 
+/* audio */
+const jump_files = ["assets/sfx/jump0.wav", "assets/sfx/jump1.wav", "assets/sfx/jump2.wav"];
+var jump_sfx = [];
+const land_files =  ["assets/sfx/land0.wav", "assets/sfx/land1.wav", "assets/sfx/land2.wav", "assets/sfx/land3.wav"];
+var land_sfx = [];
+
+function preload() {
+	for (let i = 0; i < jump_files.length; i++) {
+		const jump_sound = loadSound(jump_files[i]);
+		jump_sfx.push(jump_sound);
+	}
+	for (let i = 0; i < land_files.length; i++) {
+		const land_sound = loadSound(land_files[i]);
+		land_sfx.push(land_sound);
+	}
+}
+
 function setup() {
     createCanvas(640, 360);
     
@@ -41,7 +58,7 @@ function setup() {
 	walls = new Group();
 	for (let i = 0; i < NUM_WALLS; i++) {
 		const wall = createSprite(
-			random(32, width), 
+			random( constrain(i-1, 0, NUM_WALLS) * width/NUM_WALLS, i * width/NUM_WALLS),
 			height * 7/8 - PLATFORM_HEIGHT/2, 
 			40, 
 			height/4 - PLATFORM_HEIGHT
@@ -166,20 +183,25 @@ function game() {
     constantMovement();
     
 	if (character.collide(platform) || character.collide(walls)) {
+		
 		if (character.velocity.y > 0) 
 			character.velocity.y = 0;
 		if (character.isJumping) {
 			character.isJumping = false;
+			
+			const i = floor(random(0, land_sfx.length))
+			land_sfx[i].play();
 		}
 	} else {
 		character.velocity.y += GRAVITY;
 	}
 	
-	
+	/* character jump */
 	if (keyWentDown("x")) {
 		if (!character.isJumping) {
 			character.velocity.y -= JUMP_SPEED;
 			character.isJumping = true;
+			jump_sfx[floor(random(0, jump_sfx.length))].play();
 		}
 	}
 	
