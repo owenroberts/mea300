@@ -110,7 +110,11 @@ Go to [Home](index.html)
 - **Blog**: Using the game from week 6, write about the sounds accompanying the obstacles and rewards in the game
 - **Lab**
 	- Sound w <a href="https://jfxr.frozenfractal.com/" target="blank">jfxr</a>
+	- Sound library <a href="https://raw.githubusercontent.com/processing/p5.js-sound/master/lib/p5.sound.js" target="blank">p5 sound library</a>
 	- Selecting random sounds/images
+	- Setting colliders
+	- Object distribution
+	- [Lab](week7/lab/) & [code](https://github.com/owenroberts/mea300/tree/master/week7/lab) <!--  & [notes](week6/lab.html) -->
 - **Assignment 7**
 	- Add sounds to game
 	- Using <a href="https://jfxr.frozenfractal.com/" target="blank">jfxr</a>, <a href="http://thirdcog.eu/apps/cfxr" target="blank">cfxr</a>, or other software
