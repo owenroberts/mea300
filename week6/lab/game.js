@@ -189,7 +189,6 @@ function game() {
 		}
 	}
 	
-	
 	for (let i = 0; i < enemies.length; i++) {
 		const enemy = enemies[i];
 		if (character.overlap(enemy)) {

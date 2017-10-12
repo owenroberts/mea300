@@ -1,7 +1,7 @@
 ---
 layout: page
 title: MEA 300
-week: 4
+week: 5
 dek: Lab Notes
 ---
 
