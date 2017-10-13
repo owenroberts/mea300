@@ -97,7 +97,7 @@ Go to [Home](index.html)
 - **Lab**
 	- Camera
 	- Scenes
-	- [Lab](week6/lab/) & [code](https://github.com/owenroberts/mea300/tree/master/week6/lab) <!--  & [notes](week6/lab.html) -->
+	- [Lab](week6/lab/) & [code](https://github.com/owenroberts/mea300/tree/master/week6/lab) & [notes](week6/lab.html)
 - **Assignment 6**
 	- Add all of the visual assets to the game
 	- Take screen shots/video of the game in progress
