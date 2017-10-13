@@ -10,6 +10,12 @@ This week we added the camera and scenes.
 ## global variables 
 
 ```
+var clouds, walls, enemies, health, stuff;
+```
+
+We added a `stuff` variables to make a group for anything that isn't in one.  We need this because we will be rendering different groups of sprites at different times now.
+
+```
 /*
 0 intro screen
 1 instructions
@@ -24,10 +30,21 @@ The variable `gameState` keeps track of what scene the game is in.  The comment 
 ## setup
 
 ```
-platform = createSprite(0, height - 10, width * 2, 20);
+	stuff = new Group();
+	...
+	stuff.add(character);
+```
+
+Add the `character` to the `stuff` group.
+
+```
+	platform = createSprite(0, height - 10, width * 2, 20);
+	stuff.add(platform);
 ```
 
 We changed the `platform` so it could be wrapped around the canvas as the `character` progresses across the screen.  It used to be `createSprite(width/2, height - 10, width, 20)` but once we started using camera this stops working.
+
+Also add the `platform` to `stuff`.  The `platform` and `character` are the only single sprites in the game that aren't part of other groups.
 
 ## draw, scenes
 
@@ -47,6 +64,8 @@ function draw() {
 
 The `draw` function looks a lot different.  Previously the whole game scene was written in draw, but now we have a few different scenes, so `draw` is just reading the `gameState` and then calling a function for each different scene in the game.
 
+## intro
+
 ```
 function intro() {
 	camera.off();
@@ -64,6 +83,8 @@ function intro() {
 ```
 
 The first scene in the game is the `intro`.  Start with `camera.off()` because we don't want the scene moving with the camera.  The rest is some text with the title of the game, and instructions how to start.  The `if (keyWentDown("ENTER"))` detects when the user presses the enter key to advance to the next scene.
+
+## instructions
 
 ```
 function intructions() {
@@ -83,6 +104,8 @@ function intructions() {
 
 The `instructions` function is almost exactly the same as `intro` with some different text explaining the controls for the game.  This could probably actually be the same function with different arguments, but everyone may have different things they want to do here.
 
+## end
+
 ```
 function end() {
 	camera.off();
@@ -101,6 +124,8 @@ function end() {
 
 The `end` function is the last scene for when the character dies.  I put it here after `instructions` because again its basically the same as `intro` and `instructions`.  There are other things that could be done here to make the ending more interesting.
 
+## game
+
 ```
 function game() {
 	camera.on();
@@ -113,6 +138,8 @@ Our `game` function is basically the old `draw` function renamed.  It's what is 
 ```
 
 We got rid of the `constantMovement` controls for the character to make the game into a true endless runner.  There are other options here but this is a very simple one.
+
+## enemies, health
 
 ```
 	for (let i = 0; i < enemies.length; i++) {
@@ -144,7 +171,9 @@ If the enemy goes off the left side of the screen without hitting the player, we
 	}
 ```
 
-Same upates for the health/life rewards.
+Same updates for the health/life rewards.
+
+## platform, walls
 
 ```
 	wrap(platform, width);
@@ -161,3 +190,56 @@ We're also wrapping the `platform` so that it will appear to continue forever.  
 
 We also need to wrap the walls.
 
+## camera
+
+```
+	camera.position.x = character.position.x;
+```
+
+After calculating all of the physics in the game, we know where the character is going to be, so before we draw everything, we move the camera to the position of the character so that the scene follows the character movement.
+
+```
+	drawSprites(stuff);
+	drawSprites(walls);
+	drawSprites(enemies);
+	drawSprites(health);
+```
+
+With the camera still on, we draw everything in the scene that should move as the character moves.  This is anything the character will interact with (usually).
+
+```
+	camera.off();
+	drawSprites(clouds);
+	fill(0);
+	textAlign(LEFT);
+	textSize(12);
+	text("Lives: " + character.lives, 10, 20);
+```
+
+Then we turn the camera off to draw things like the `clouds` which don't interact with the character and the UI (User Interface) which should stay static the whole time.
+
+## death
+
+```
+	/* detect game ending */
+	if (character.lives <= 0) {
+		gameState = 3;
+		character.velocity.y = 0;
+	}
+```
+
+After all this, we need to make sure the character is still alive before drawing the next frame.  WE can check the number in `character.lives`.  If it's `0` or less, it's time to start over.  Set the `gameState` to `3`, the `end` scene, and turn off the `character.velocity` on the `y` axis so he doesn't float into the sky or sink into the ground while we're not watching.
+
+In the `end` scene, when the user hits `ENTER` the game will go back to the beginning and the `character.lives` is set back to `3`.
+
+## wrap function
+
+```
+function wrap(obj, reset) {
+	if (character.position.x - obj.position.x >= width/2) {
+		obj.position.x += reset;
+	}
+}
+```
+
+We added this new `wrap` function to reset objects in the scene as the character passes them by.  It takes an argument for the `obj`, so it can work with any sprite, then determines if the character has passed the sprite for long enough that it's off screen (in this case `width/2`) and then resets it's x position to whatever value is in the `reset` argument.  You might want to also change the y value, so you could update this function for your own game.
