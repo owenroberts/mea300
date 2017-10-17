@@ -219,7 +219,6 @@ function game() {
 			character.isJumping = false;
 			hit_sfx[floor(random(0, hit_sfx.length))].play();
 		}
-
 	} else {
 		character.velocity.y += GRAVITY;
 	}

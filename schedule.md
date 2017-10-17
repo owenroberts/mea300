@@ -114,7 +114,7 @@ Go to [Home](index.html)
 	- Selecting random sounds/images
 	- Setting colliders
 	- Object distribution
-	- [Lab](week7/lab/) & [code](https://github.com/owenroberts/mea300/tree/master/week7/lab) <!--  & [notes](week6/lab.html) -->
+	- [Lab](week7/lab/) & [code](https://github.com/owenroberts/mea300/tree/master/week7/lab) & [notes](week7/lab.html)
 - **Assignment 7**
 	- Add sounds to game
 	- Using <a href="https://jfxr.frozenfractal.com/" target="blank">jfxr</a>, <a href="http://thirdcog.eu/apps/cfxr" target="blank">cfxr</a>, or other software
@@ -122,12 +122,25 @@ Go to [Home](index.html)
 
 ## Week 8
 **Midterm**
-- In class workshops to finish up Midterm
+- In class workshop
+- Midterm grading: 5 categories
+	- Graphics for all sprites
+	- Sound effects for all interactions
+	- User Interface, instructions
+	- Interactivity
+	- Balance of rewards, obstacles, goals
+
 
 <!-- 
 
 week 9
 browser games - emergence of online games
+
+github, collaboration
+emergent vs progression
+music
+user testing
+
 
 choose final groups
 
