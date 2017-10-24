@@ -130,6 +130,9 @@ Go to [Home](index.html)
 	- Interactivity
 	- Balance of rewards, obstacles, goals
 
+## Week 9
+- Midterm Presentations
+- Discuss Final project
 
 <!-- 
 
