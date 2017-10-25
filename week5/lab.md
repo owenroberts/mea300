@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: notes
 title: MEA 300
 week: 5
 dek: Lab Notes
