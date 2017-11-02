@@ -120,7 +120,7 @@ Go to [Home](index.html)
 	- Using <a href="https://jfxr.frozenfractal.com/" target="blank">jfxr</a>, <a href="http://thirdcog.eu/apps/cfxr" target="blank">cfxr</a>, or other software
 	- Start working on midterm
 
-## Week 8
+## Week 8 & 9
 **Midterm**
 - In class workshop
 - Midterm grading: 5 categories
@@ -129,12 +129,30 @@ Go to [Home](index.html)
 	- User Interface, instructions
 	- Interactivity
 	- Balance of rewards, obstacles, goals
-
-## Week 9
 - Midterm Presentations
 - Discuss Final project
 
+## Week 10
+**Browser Games**
+- Present Midterm
+- [Browser Games](week10/)
+- **Lab**
+	- Physics
+- **Final Project Pitch**
+	- Write a pitch for your final project
+	- Include images of the assets from your game
+	- What three features of your game are most important/unique?
+
+
 <!-- 
+
+week	lecture			lab
+10		browser games	more physics? - bullets, gun aiming
+11		emerg, progr	levels, reset
+12		user testing	music
+13		mechanics		game dynamics
+14		workshop		workshop
+15 		final 			final
 
 week 9
 browser games - emergence of online games
