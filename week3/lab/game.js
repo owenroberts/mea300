@@ -42,8 +42,6 @@ function setup() {
 		);
 		cloud.velocity.x = -random(0.1, 0.5);
 	}
-	
-    
 }
 
 function draw() {
@@ -61,16 +59,12 @@ function draw() {
 	} else {
 		character.velocity.y += GRAVITY;
 	}
-	
 	if (keyWentDown("x")) {
 		if (!character.isJumping) {
 			character.velocity.y -= JUMP_SPEED;
 			character.isJumping = true;
 		}
-		
 	}
-	
-    
     drawSprites();
 }
 

@@ -74,41 +74,103 @@ Go to [Home](index.html)
 	- Post images and explanations on blog
 
 ## Week 5
+**Video games and art**
 - Present Midterm game ideas
 - [Video Games & Art](week5/)
 - **Reading**: Play [Syoban Action](https://int3.github.io/open-syobon-action.js/)
 - **Blog**: How does Syoban Action play with video game expectations?
+- **Lab**
+	- Groups, loops
+	- collides & overlap
+	- [Lab](week5/lab/) & [code](https://github.com/owenroberts/mea300/tree/master/week5/lab) & [notes](week5/lab.html)
 - **Assignment 5**
 	- Design 5 potential *rewards* for your game
 	- Same idea as Assignment 4
 	- Post screen shots and explanation of how each reward could help the player advance in the game
 	- Post on Medium
 
+## Week 6
+**Indie games**
+- [Indie games](week6/indie.html)
+- **Reading**: Find a game on <a href="https://itch.io/" target="blank">itch.io</a> to play
+- **Blog**: Write about the game you found, take screen shots of goals, obstacles and rewards
+- **Lab**
+	- Camera
+	- Scenes
+	- [Lab](week6/lab/) & [code](https://github.com/owenroberts/mea300/tree/master/week6/lab) & [notes](week6/lab.html)
+- **Assignment 6**
+	- Add all of the visual assets to the game
+	- Take screen shots/video of the game in progress
+	- Post on the Medium blog
+	- Write about how the rewards and obstacles interact with the player/character
+	
+## Week 7
+**Sound**
+- [Sound effects](week7/sound.html)
+- **Blog**: Using the game from week 6, write about the sounds accompanying the obstacles and rewards in the game
+- **Lab**
+	- Sound w <a href="https://jfxr.frozenfractal.com/" target="blank">jfxr</a>
+	- Sound library <a href="https://raw.githubusercontent.com/processing/p5.js-sound/master/lib/p5.sound.js" target="blank">p5 sound library</a>
+	- Selecting random sounds/images
+	- Setting colliders
+	- Object distribution
+	- [Lab](week7/lab/) & [code](https://github.com/owenroberts/mea300/tree/master/week7/lab) & [notes](week7/lab.html)
+- **Assignment 7**
+	- Add sounds to game
+	- Using <a href="https://jfxr.frozenfractal.com/" target="blank">jfxr</a>, <a href="http://thirdcog.eu/apps/cfxr" target="blank">cfxr</a>, or other software
+	- Start working on midterm
+
+## Week 8 & 9
+**Midterm**
+- In class workshop
+- Midterm grading: 5 categories
+	- Graphics for all sprites
+	- Sound effects for all interactions
+	- User Interface, instructions
+	- Interactivity
+	- Balance of rewards, obstacles, goals
+- Midterm Presentations
+- Discuss Final project
+
+## Week 10
+**Browser Games**
+- Present Midterm
+- [Browser Games](week10/)
+- **Lab**
+	- Physics
+- **Final Project Pitch**
+	- Write a pitch for your final project
+	- Include images of the assets from your game
+	- What three features of your game are most important/unique?
+
+
 <!-- 
+
+week	lecture			lab
+10		browser games	more physics? - bullets, gun aiming
+11		emerg, progr	levels, reset
+12		user testing	music
+13		mechanics		game dynamics
+14		workshop		workshop
+15 		final 			final
+
+week 9
+browser games - emergence of online games
+
+github, collaboration
+emergent vs progression
+music
+user testing
+
+
+choose final groups
+
 http://owenroberts.github.io/videogames/week8/index.html
 http://imranunit40.blogspot.com/2015/05/goals-challenges-and-rewards.html
 http://jeremycouillard.com/newMedia/gameDesign.html
 http://graysonearle.com/edu/gamepro/
 	- https://www.primagames.com/games/super-mario-3d-world/feature/15-greatest-moments-sega-and-nintendo-16-bit-console-war
 	- http://keithburgun.net/randomness-and-game-design/
-
-
-
-
-week 4
-- games and art, maybe not necessary
-
-
-week 5 
-- internet art, interactive art
-- maybe nah?
-
-
-week 6 
-- emergence of online games
-
-week 7 
-- midterm
 
 week 8
 - group assignment
