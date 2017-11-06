@@ -43,6 +43,7 @@ function setup() {
     const run_anim = loadAnimation("assets/run/run_0.png", "assets/run/run_5.png");
     character.addAnimation("idle", idle_anim);
     character.addAnimation("run", run_anim);
+
 	character.isJumping = true;
 	character.lives = 3;
 	stuff = new Group();
@@ -82,6 +83,7 @@ function setup() {
 		const cloud = createSprite(
 			random(0, width * 2),
 			random(0, height/2),
+
 			random(5,100),
 			random(2,4)
 		);
@@ -112,9 +114,6 @@ function setup() {
 		);
 		health.add(life);
 	}
-
-
-
 }
 
 function draw() {
@@ -178,7 +177,6 @@ function game() {
 		const tree = trees[i];
 		wrap(tree, random(width, width*3));
 	}
-    
     /* keyboard events */
     constantMovement();
     
@@ -195,7 +193,7 @@ function game() {
 	} else {
 		character.velocity.y += GRAVITY;
 	}
-	
+
 	/* character jump */
 	if (keyWentDown("x")) {
 		if (!character.isJumping) {
