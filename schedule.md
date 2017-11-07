@@ -143,12 +143,20 @@ Go to [Home](index.html)
 	- Include images of the assets from your game
 	- What three features of your game are most important/unique?
 
+## Week 11
+**Emergence & Progression**
+- [Emergence & Progression](week11/)
+- **Lab**
+	- Levels
+	- Resetting game
+- **Final Project Plan**
+	- Outline the levels or scenes in the game
+	- Chart how the game progresses or increases in difficulty
+	- Design interface for moving in between levels
 
 <!-- 
 
 week	lecture			lab
-10		browser games	more physics? - bullets, gun aiming
-11		emerg, progr	levels, reset
 12		user testing	music
 13		mechanics		game dynamics
 14		workshop		workshop
