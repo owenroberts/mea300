@@ -7,7 +7,7 @@ const S = 2;
 
 function setup() {
 	console.log(windowWidth, windowHeight);
-	createCanvas(windowWidth, 480);
+	createCanvas(640, 480);
 	
 	meteors = new Group();
 	bullets = new Group();
