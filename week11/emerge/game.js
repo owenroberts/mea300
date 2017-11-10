@@ -4,24 +4,51 @@ var skyBackground;
 var platform;
 var clouds, walls, enemies, health, stuff;
 const NUM_BUSHES = 8,
-	NUM_CLOUDS = 2,
+	NUM_CLOUDS = 2;
 	NUM_WALLS = 4,
 	NUM_ENEMIES = 3,
 	NUM_HEALTH = 1;
 const SPEED = 5;
 const JUMP_SPEED = SPEED * 2;
 const GRAVITY = 0.5;
-//const enemySpeedMin = SPEED/5, enemySpeedMax = SPEED;
+var enemySpeedMin = SPEED/5, enemySpeedMax = SPEED;
 const cloudSpeedMin = SPEED/2, cloudSpeedMax = SPEED;
-var milestones = [];
 
-/*
+/* gamestates
 0 intro screen
 1 instructions
 2 game
-3 ending
+3 dies
+4 next level
 */
+
 var gameState = 0;
+var progress = 1;
+var currentLevel = 0;
+var levelData = {
+	0: {
+		walls: 4,
+		enemies: 3,
+		health: 2,
+		speedMin: SPEED/5,
+		speedMax: SPEED
+	},
+	1: {
+		walls: 3,
+		enemies: 5,
+		health: 1,
+		speedMin: SPEED/4,
+		speedMax: SPEED * 1.5
+	},
+	2: {
+		walls: 2,
+		enemies: 9,
+		health:0,
+		speedMin: SPEED/2,
+		speedMax: SPEED * 2
+	}
+};
+
 
 /* graphics */
 const cloud_files = [
@@ -60,8 +87,8 @@ function setup() {
 	stuff = new Group();
 	walls = new Group();
 	clouds = new Group();
-	health = new Group();
 	enemies = new Group();
+	health = new Group();
 
 	/* character setup */
 	character = createSprite(0, 20, 16, 16);
@@ -85,7 +112,7 @@ function setup() {
 	platform = createSprite(0, height - 10, width * 2, 20);
 	stuff.add(platform);
 	//platform.debug = true;
-	
+
 	for (let i = 0; i < NUM_BUSHES; i++) {
 		createSprite(
 			random(0, width),
@@ -107,26 +134,36 @@ function setup() {
 		cloud.velocity.x = -random(cloudSpeedMin, cloudSpeedMax);
 		clouds.add(cloud);
 	}
+	
+	buildLevel();
+}
 
+function buildLevel() {
 	for (let i = 0; i < NUM_WALLS; i++) {
-		spawn(i * width*2/NUM_WALLS, height * 7 / 8, height/2, 200, 40, 0, 0, walls);
+		const wall = createSprite(
+			i * width*2/NUM_WALLS,
+			random(height * 7 / 8, height/2),
+			200,
+			40
+		);
+		wall.debug = true;
+		walls.add(wall);
 	}
 	
 	for (let i = 0; i < NUM_ENEMIES; i++) {
-		const sz = random(30, 50);
-		spawn(random(width * 2, width * 4), height * 3 / 4, height * 7 / 8, sz, sz, SPEED/5, SPEED, enemies);
+		spawnEnemy();
 	}
 	
 	for (let i = 0; i < NUM_HEALTH; i++) {
-		spawn(random(0, width), height / 2, height, 30, 20, 0, 0, health);
+		const life = createSprite(
+			random(0, width),
+			random(height / 2, height),
+			30,
+			20
+		);
+		health.add(life);
 	}
-
-}
-
-function spawn(x, minY, maxY, w, h, speedMin, speedMax, g) {
-	const s = createSprite(x, random(minY, maxY), w, h);
-	s.velocity.x = -random(speedMin, speedMax);
-	g.add(s);
+	
 }
 
 function draw() {
@@ -137,7 +174,9 @@ function draw() {
 	} else if (gameState == 2) {
 		game();
 	} else if (gameState == 3) {
-		end();
+		dead();
+	} else if (gameState == 4) {
+		nextLevel();
 	}
 }
 
@@ -169,7 +208,7 @@ function intructions() {
 	}
 }
 
-function end() {
+function dead() {
 	camera.off();
 	background(100);
 	fill(255);
@@ -179,8 +218,23 @@ function end() {
 	text("press enter to try again", width / 2, height / 2 + 48);
 	if (keyWentDown("ENTER")) {
 		gameState = 1;
-		character.lives = 3;
+		reset();
+		buildLevel(4, 3, 2);
 	}
+}
+
+function reset() {
+	character.lives = 3;
+	character.velocity.y = 0;
+	character.minX = 0;
+	character.position.x = 0;
+	character.position.y = 0;
+	camera.position.x = width/2;
+	platform.position.x = 0;
+	skyBackground.position.x = 0;
+	walls.clear();
+	enemies.clear();
+	health.clear();
 }
 
 function game() {
@@ -276,6 +330,7 @@ function game() {
 	}
 
 	/* wrapping sprites */
+	//wrap(platform, width);
 	if (character.position.x - platform.position.x > width/2) {
 		platform.position.x += width;
 	}
@@ -311,14 +366,32 @@ function game() {
 	/* detect game ending */
 	if (character.lives <= 0) {
 		gameState = 3;
-		character.velocity.y = 0;
 	}
 	
-	if (character.position.x % width*2 == 0 && milestones.indexOf(character.position.x) == -1) {
-		milestones.push(character.position.x);
-		var sz = random(40, 60);
-		spawn(character.position.x + width, height * 3 / 4, height * 7 / 8, sz, sz, SPEED/5, SPEED, enemies);
+	/* follow progress */
+	if (character.position.x > width * 2 * progress) {
+		progress++;
+		console.log("Next level");
+		spawnEnemy();
+		enemySpeedMin++;
+		enemySpeedMax++;
+		if (walls.length >0)
+			walls.remove(walls[walls.length-1]);
+		if (health.length > 0) 
+			health.remove(health[health.length-1]);
 	}
+}
+
+function spawnEnemy() {
+	const sz = random(30, 50);
+	const enemy = createSprite(
+		character.position.x + random(width * 2, width * 4),
+		random(height * 3 / 4, height * 7 / 8),
+		sz,
+		sz
+	);
+	enemy.velocity.x = -random(enemySpeedMin, enemySpeedMax);
+	enemies.add(enemy);
 }
 
 function wrap(obj, reset) {

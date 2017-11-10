@@ -254,9 +254,10 @@ function nextLevel() {
 function reset() {
 	character.lives = 3;
 	character.velocity.y = 0;
+	character.minX = 0;
 	character.position.x = 0;
 	character.position.y = 0;
-	camera.position.x = 0;
+	camera.position.x = width/2;
 	platform.position.x = 0;
 	skyBackground.position.x = 0;
 	spaceship.position.x = width*3;
