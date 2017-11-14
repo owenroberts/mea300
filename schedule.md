@@ -150,7 +150,7 @@ Go to [Home](index.html)
 	- Levels
 	- Resetting game
 	- [Progressive Game Lab](week11/lab/)
-	- [Emergent Game Lab](week11/emerge/)
+	- [Emergent Game Lab](week11/emerge/) - [Notes](week11/lab.html)
 - **Final Project Plan**
 	- Outline the levels or scenes in the game
 	- Chart how the game progresses or increases in difficulty
