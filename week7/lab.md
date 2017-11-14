@@ -1,7 +1,7 @@
 ---
 layout: notes
 title: MEA 300
-week: 11
+week: 7
 dek: Lab Notes
 ---
 
