@@ -14,8 +14,24 @@ const GRAVITY = 0.5;
 const enemySpeedMin = SPEED/5, enemySpeedMax = SPEED;
 const cloudSpeedMin = SPEED/2, cloudSpeedMax = SPEED;
 
-var startButton;
-var buttons;
+var menus = [
+	{
+		"buttons": [
+			{
+				text: "Play game",
+				state: 2
+			}, 
+			{
+				text: "Instructions",
+				state: 1
+			}, 
+			{
+				text: "Options",
+				state: 5
+			}
+		]
+	}
+];
 var castle;
 
 /*
@@ -84,6 +100,8 @@ function setup() {
     clouds = new Group();
     enemies = new Group();
     health = new Group();
+	
+	startMenu = new Group();
 
 	/* character setup */
 	character = createSprite(0, 20, 16, 16);
@@ -107,14 +125,6 @@ function setup() {
 	platform = createSprite(width/2, height - 10, width * 2, 20);
 	stuff.add(platform);
 	platform.debug = true;
-    
-    startButton = createSprite(width/2, height/2);
-    //const button_anim = loadAnimation(, "assets/ui/button/button2.png");
-    startButton.addAnimation("idle", "assets/ui/button/button0.png");
-    startButton.addAnimation("hover", "assets/ui/button/button0.png", "assets/ui/button/button1.png");
-    startButton.addAnimation("click", "assets/ui/button/button2.png");
-    startButton.mouseActive = true;
-    startButton.clicked = false;
     
     castle = createSprite(width*2, height/2, width/4, height * 2/3);
     stuff.add(castle);
@@ -141,6 +151,14 @@ function setup() {
 	}
 	
     buildLevel(levels[level].walls, levels[level].enemies, levels[level].health);
+	
+	for (let i = 0; i < menus.length; i++) {
+		menus[i].buttonSprites = new Group();
+		for (let j = 0; j < menus[i].buttons.length; j++) {
+			const button = createButton(400, 100 + j * 100, menus[i].buttons[j].text, menus[i].buttons[j].state);
+			menus[i].buttonSprites.add(button);
+		}
+	}
 }
 function buildLevel(NUM_WALLS, NUM_ENEMIES, NUM_HEALTH) {
 	for (let i = 0; i < NUM_WALLS; i++) {
@@ -177,7 +195,7 @@ function buildLevel(NUM_WALLS, NUM_ENEMIES, NUM_HEALTH) {
 
 function draw() {
 	if (gameState == 0) {
-		intro();
+		menu(0);//intro();
 	} else if (gameState == 1) {
 		intructions();
 	} else if (gameState == 2) {
@@ -187,6 +205,46 @@ function draw() {
 	} else if (gameState == 4) {
         nextLevel();
     }
+}
+
+
+function createButton(x, y, text, state) {
+	button = createSprite(x, y);
+    button.addAnimation("idle", "assets/ui/button/button0.png");
+    button.addAnimation("hover", "assets/ui/button/button0.png", "assets/ui/button/button1.png");
+    button.addAnimation("click", "assets/ui/button/button2.png");
+    button.mouseActive = true;
+    button.clicked = false;
+	button.text = text;
+	button.state = state;
+	return button;
+}
+
+function menu(index) {
+	
+	camera.off();
+	background(51);
+	for (var i = 0; i < menus[index].buttonSprites.length; i++) {
+		const button = menus[index].buttonSprites[i];
+		button.display();
+		fill(255);
+		textAlign(CENTER);
+		textSize(14);
+		text(button.text, button.position.x, button.position.y)
+		if (button.mouseIsPressed) {
+			button.changeAnimation("click");
+			button.clicked = true;
+		} else if (button.mouseIsOver) {
+			button.changeAnimation("hover");
+			if (button.clicked) {
+				console.log(button.state);
+				gameState = button.state;
+			}
+		} else {
+			button.clicked = false;
+			button.changeAnimation("idle");
+		}
+	}
 }
 
 function intro() {
@@ -395,10 +453,10 @@ function game() {
 	drawSprites(clouds);
 	
 	textAlign(LEFT);
-	textSize(24);
-	stroke("red");
+	textSize(22);
+	stroke("lightblue");
 	fill(0);
-	rect(10, 0, 50, 20);
+	rect(5, 0, 85, 25);
 	fill(255);
 	text("Lives: " + character.lives, 10, 20);
 
