@@ -175,8 +175,6 @@ function draw() {
 		game();
 	} else if (gameState == 3) {
 		dead();
-	} else if (gameState == 4) {
-		nextLevel();
 	}
 }
 

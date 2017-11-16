@@ -3,16 +3,36 @@ var character;
 var skyBackground;
 var platform;
 var clouds, walls, enemies, health, stuff;
-const NUM_BUSHES = 8,
+/*var NUM_BUSHES = 8,
 	NUM_CLOUDS = 2,
 	NUM_WALLS = 4,
 	NUM_ENEMIES = 3,
-	NUM_HEALTH = 1;
+	NUM_HEALTH = 1;*/
 const SPEED = 5;
 const JUMP_SPEED = SPEED * 2;
 const GRAVITY = 0.5;
 const enemySpeedMin = SPEED/5, enemySpeedMax = SPEED;
 const cloudSpeedMin = SPEED/2, cloudSpeedMax = SPEED;
+
+var menus = [
+	{
+		"buttons": [
+			{
+				text: "Play game",
+				state: 2
+			}, 
+			{
+				text: "Instructions",
+				state: 1
+			}, 
+			{
+				text: "Options",
+				state: 5
+			}
+		]
+	}
+];
+var castle;
 
 /*
 0 intro screen
@@ -21,6 +41,24 @@ const cloudSpeedMin = SPEED/2, cloudSpeedMax = SPEED;
 3 ending
 */
 var gameState = 0;
+var level = 0;
+var levels = {
+    0: {
+        walls: 4,
+        enemies: 3, 
+        health: 1
+    },
+    1: {
+        walls: 2,
+        enemies: 4,
+        health: 1
+    },
+    2: {
+        walls: 1,
+        enemies: 5,
+        health: 0
+    }
+}
 
 /* graphics */
 const cloud_files = [
@@ -58,6 +96,12 @@ function setup() {
 	createCanvas(640, 360);
 
 	stuff = new Group();
+    walls = new Group();
+    clouds = new Group();
+    enemies = new Group();
+    health = new Group();
+	
+	startMenu = new Group();
 
 	/* character setup */
 	character = createSprite(0, 20, 16, 16);
@@ -78,23 +122,14 @@ function setup() {
 	skyBackground.debug = true;
 
 	/* platform setup */
-	platform = createSprite(0, height - 10, width * 2, 20);
+	platform = createSprite(width/2, height - 10, width * 2, 20);
 	stuff.add(platform);
-	//platform.debug = true;
-
-	walls = new Group();
-	for (let i = 0; i < NUM_WALLS; i++) {
-		const wall = createSprite(
-			i * width*2/NUM_WALLS,
-			random(height * 7 / 8, height/2),
-			200,
-			40
-		);
-		wall.debug = true;
-		walls.add(wall);
-	}
-
-	for (let i = 0; i < NUM_BUSHES; i++) {
+	platform.debug = true;
+    
+    castle = createSprite(width*2, height/2, width/4, height * 2/3);
+    stuff.add(castle);
+    
+    for (let i = 0; i < 7; i++) {
 		createSprite(
 			random(0, width),
 			random(height - 20, height),
@@ -102,9 +137,7 @@ function setup() {
 			random(50, 100)
 		);
 	}
-
-	clouds = new Group();
-	for (let i = 0; i < NUM_CLOUDS; i++) {
+	for (let i = 0; i < 3; i++) {
 		const cloud = createSprite(
 			random(width, width * 2),
 			random(0, height / 2),
@@ -116,8 +149,28 @@ function setup() {
 		cloud.velocity.x = -random(cloudSpeedMin, cloudSpeedMax);
 		clouds.add(cloud);
 	}
-
-	enemies = new Group();
+	
+    buildLevel(levels[level].walls, levels[level].enemies, levels[level].health);
+	
+	for (let i = 0; i < menus.length; i++) {
+		menus[i].buttonSprites = new Group();
+		for (let j = 0; j < menus[i].buttons.length; j++) {
+			const button = createButton(400, 100 + j * 100, menus[i].buttons[j].text, menus[i].buttons[j].state);
+			menus[i].buttonSprites.add(button);
+		}
+	}
+}
+function buildLevel(NUM_WALLS, NUM_ENEMIES, NUM_HEALTH) {
+	for (let i = 0; i < NUM_WALLS; i++) {
+		const wall = createSprite(
+			i * width*2/NUM_WALLS,
+			random(height * 7 / 8, height/2),
+			200,
+			40
+		);
+		wall.debug = true;
+		walls.add(wall);
+	}
 	for (let i = 0; i < NUM_ENEMIES; i++) {
 		const sz = random(30, 50);
 		const enemy = createSprite(
@@ -129,8 +182,6 @@ function setup() {
 		enemy.velocity.x = -random(enemySpeedMin, enemySpeedMax);
 		enemies.add(enemy);
 	}
-
-	health = new Group();
 	for (let i = 0; i < NUM_HEALTH; i++) {
 		const life = createSprite(
 			random(0, width),
@@ -140,18 +191,59 @@ function setup() {
 		);
 		health.add(life);
 	}
-
 }
 
 function draw() {
 	if (gameState == 0) {
-		intro();
+		menu(0);//intro();
 	} else if (gameState == 1) {
 		intructions();
 	} else if (gameState == 2) {
 		game();
 	} else if (gameState == 3) {
-		end();
+		dead();
+	} else if (gameState == 4) {
+        nextLevel();
+    }
+}
+
+
+function createButton(x, y, text, state) {
+	button = createSprite(x, y);
+    button.addAnimation("idle", "assets/ui/button/button0.png");
+    button.addAnimation("hover", "assets/ui/button/button0.png", "assets/ui/button/button1.png");
+    button.addAnimation("click", "assets/ui/button/button2.png");
+    button.mouseActive = true;
+    button.clicked = false;
+	button.text = text;
+	button.state = state;
+	return button;
+}
+
+function menu(index) {
+	
+	camera.off();
+	background(51);
+	for (var i = 0; i < menus[index].buttonSprites.length; i++) {
+		const button = menus[index].buttonSprites[i];
+		button.display();
+		fill(255);
+		textAlign(CENTER);
+		textSize(14);
+		text(button.text, button.position.x, button.position.y)
+		if (button.mouseIsPressed) {
+			button.changeAnimation("click");
+			button.clicked = true;
+		} else if (button.mouseIsOver) {
+			button.changeAnimation("hover");
+			if (button.clicked) {
+				console.log(button.state);
+				gameState = button.state;
+			}
+		} else {
+			button.clicked = false;
+			button.changeAnimation("idle");
+		}
 	}
 }
 
@@ -161,9 +253,23 @@ function intro() {
 	fill(255);
 	textSize(24);
 	textAlign(CENTER);
-	text("my first game", width / 2, height / 2);
-	text("by owen", width / 2, height / 2 + 24);
-	text("press enter to start", width / 2, height / 2 + 48);
+	text("my first game", width / 2, height / 4);
+	text("by owen", width / 2, height / 4 + 24);
+	//text("press enter to start", width / 2, height / 2 + 48);
+    startButton.display();
+    text("start", width/2, height/2 + 4);
+    if (startButton.mouseIsPressed) {
+        startButton.changeAnimation("click");
+        startButton.clicked = true;
+    } else if (startButton.mouseIsOver) {
+        startButton.changeAnimation("hover");
+        if (startButton.clicked) {
+            gameState = 1;
+        }
+    } else {
+        startButton.changeAnimation("idle");
+    }
+    
 	if (keyWentDown("ENTER")) {
 		gameState = 1;
 	}
@@ -183,7 +289,7 @@ function intructions() {
 	}
 }
 
-function end() {
+function dead() {
 	camera.off();
 	background(100);
 	fill(255);
@@ -192,9 +298,41 @@ function end() {
 	text("you died", width / 2, height / 2);
 	text("press enter to try again", width / 2, height / 2 + 48);
 	if (keyWentDown("ENTER")) {
-		gameState = 1;
-		character.lives = 3;
+		reset();
+        buildLevel(levels[level].walls, levels[level].enemies, levels[level].health);
+        gameState = 1;
 	}
+}
+
+function nextLevel() {
+    camera.off();
+	background(100);
+	fill(255);
+	textSize(24);
+	textAlign(CENTER);
+	text("you made it to the next level", width / 2, height / 2);
+	text("press enter to for next level", width / 2, height / 2 + 48);
+	if (keyWentDown("ENTER")) {
+		reset();
+        if (level < 2) level++;
+        buildLevel(levels[level].walls, levels[level].enemies, levels[level].health);
+        gameState = 2;
+	}
+}
+
+function reset() {
+    character.velocity.y = 0;
+    character.lives = 3;
+    character.position.x = 0;
+    character.position.y = 20;
+    platform.position.x = 0;
+    skyBackground.position.x = 0;
+    camera.position.x = 0;
+    walls.clear();
+    clouds.clear();
+    enemies.clear();
+    health.clear();
+    castle.position.x = width*3;
 }
 
 function game() {
@@ -290,7 +428,9 @@ function game() {
 	}
 
 	/* wrapping sprites */
-	//wrap(platform, width);
+	if (character.position.x - platform.position.x > width/2) {
+        platform.position.x += width;
+    }
 	for (let i = 0; i < walls.length; i++) {
 		const wall = walls[i];
 		wrap(wall, random(width * 2, width * 4));
@@ -313,18 +453,20 @@ function game() {
 	drawSprites(clouds);
 	
 	textAlign(LEFT);
-	textSize(24);
-	stroke("red");
+	textSize(22);
+	stroke("lightblue");
 	fill(0);
-	rect(10, 0, 50, 20);
+	rect(5, 0, 85, 25);
 	fill(255);
 	text("Lives: " + character.lives, 10, 20);
 
 	/* detect game ending */
-	if (character.lives <= 0) {
+	if (character.lives <= 0 || character.position.y > height) {
 		gameState = 3;
-		character.velocity.y = 0;
 	}
+    if (character.overlap(castle)) {
+        gameState = 4;
+    }
 }
 
 function wrap(obj, reset) {

@@ -62,6 +62,7 @@ function draw() {
 	meteors.bounce(meteors);
 	
 	meteors.overlap(bullets, hitMeteor);
+	bullets.bounce(ground);
 	
 	drawSprites();
 }
