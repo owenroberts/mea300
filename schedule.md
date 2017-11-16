@@ -149,10 +149,23 @@ Go to [Home](index.html)
 - **Lab**
 	- Levels
 	- Resetting game
+	- [Progressive Game Lab](week11/lab/)
+	- [Emergent Game Lab](week11/emerge/) - [Notes](week11/lab.html)
 - **Final Project Plan**
 	- Outline the levels or scenes in the game
 	- Chart how the game progresses or increases in difficulty
 	- Design interface for moving in between levels
+
+## Week 12
+**User Testing**
+- [User Testing](week12/)
+- **Lab**
+	- User interface
+	- Background music with [Audiotool](https://www.audiotool.com/app) - [Non flash version](https://next.audiotool.com/)
+- **Assignment: User testing survey**
+	- Use Google Forms to create a survey for user testing
+	- We will review the surveys next week and then send to at least 5 testers
+	- Testing feedback will be incorporated into the final
 
 <!-- 
 
