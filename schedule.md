@@ -170,8 +170,8 @@ Go to [Home](index.html)
 <!-- 
 
 week	lecture			lab
-12		user testing	music
-13		mechanics		game dynamics
+12		user testing	music/UI
+13		mechanics		publishing for user testing/ game dynamics
 14		workshop		workshop
 15 		final 			final
 
