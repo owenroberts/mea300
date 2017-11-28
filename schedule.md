@@ -138,6 +138,7 @@ Go to [Home](index.html)
 - [Browser Games](week10/)
 - **Lab**
 	- Physics
+	- [Lab](week10/lab/) & [code](https://github.com/owenroberts/mea300/tree/master/week10/lab)
 - **Final Project Pitch**
 	- Write a pitch for your final project
 	- Include images of the assets from your game
@@ -161,16 +162,27 @@ Go to [Home](index.html)
 - [User Testing](week12/)
 - **Lab**
 	- User interface
+	- [Lab](week12/lab/) & [code](https://github.com/owenroberts/mea300/tree/master/week12/lab)
 	- Background music with [Audiotool](https://www.audiotool.com/app) - [Non flash version](https://next.audiotool.com/)
 - **Assignment: User testing survey**
 	- Use Google Forms to create a survey for user testing
 	- We will review the surveys next week and then send to at least 5 testers
 	- Testing feedback will be incorporated into the final
 
+## Week 13
+**Non-player AI**
+- User testing workshop
+- **Lab**
+	- Enemy AI
+	- Publishing games on itch.io
+- **Assignment: User testing**
+	- Send the user testing form and game to at least 5 players
+	- Document the feedback in a blog post
+	- Choose three things to work on for the final
+
 <!-- 
 
 week	lecture			lab
-12		user testing	music
 13		mechanics		game dynamics
 14		workshop		workshop
 15 		final 			final
