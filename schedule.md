@@ -175,16 +175,9 @@ week	lecture			lab
 14		workshop		workshop
 15 		final 			final
 
-week 9
-browser games - emergence of online games
-
 github, collaboration
-emergent vs progression
-music
-user testing
-
-
-choose final groups
+storytelling in games
+game worlds
 
 http://owenroberts.github.io/videogames/week8/index.html
 http://imranunit40.blogspot.com/2015/05/goals-challenges-and-rewards.html
@@ -193,31 +186,5 @@ http://graysonearle.com/edu/gamepro/
 	- https://www.primagames.com/games/super-mario-3d-world/feature/15-greatest-moments-sega-and-nintendo-16-bit-console-war
 	- http://keithburgun.net/randomness-and-game-design/
 
-week 8
-- group assignment
-- collaboratin
-- github
-
-week 9 
-- storytelling in games
-- emergent vs progressive games
-- game worlds
-
-week 10 
-- sound
-
-week 11
-- prototyping
-
-week 12 
-- user testing
-
-week 13
-- iterating on design and features
-
-week 14-15
-- final workshop
-
-randomness
 
  -->
