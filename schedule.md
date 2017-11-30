@@ -174,6 +174,7 @@ Go to [Home](index.html)
 - User testing workshop
 - **Lab**
 	- Enemy AI
+	- [Lab](week13/lab/) & [code](https://github.com/owenroberts/mea300/tree/master/week13/lab)
 	- Publishing games on itch.io
 - **Assignment: User testing**
 	- Send the user testing form and game to at least 5 players
