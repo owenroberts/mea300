@@ -174,6 +174,7 @@ Go to [Home](index.html)
 - User testing workshop
 - **Lab**
 	- Enemy AI
+	- [Lab](week13/lab/) & [code](https://github.com/owenroberts/mea300/tree/master/week13/lab)
 	- Publishing games on itch.io
 - Pac-Man ghost AI
 	- <a href="https://www.youtube.com/watch?v=sQK7PmR8kpQ" target="blank">Ms. Pac-Man Tutorial: Ghost Behavior</a>
