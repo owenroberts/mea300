@@ -175,6 +175,11 @@ Go to [Home](index.html)
 - **Lab**
 	- Enemy AI
 	- Publishing games on itch.io
+- Pac-Man ghost AI
+	- <a href="https://www.youtube.com/watch?v=sQK7PmR8kpQ" target="blank">Ms. Pac-Man Tutorial: Ghost Behavior</a>
+	- <a href="http://gameinternals.com/post/2072558330/understanding-pac-man-ghost-behavior" target="blank">Understanding Pac-Man Ghost Behavior</a>
+	- <a href="http://www.gamasutra.com/view/feature/3938/the_pacman_dossier.php?print=1" target="blank">The Pac-Man Dossier</a>
+	- <a href="http://laweekly.blogs.com/joshuah_bearman/files/harpers_billy_mitchell.pdf" target="blank">The Perfect Game: Five years with the master of Pac-Man</a>
 - **Assignment: User testing**
 	- Send the user testing form and game to at least 5 players
 	- Document the feedback in a blog post
