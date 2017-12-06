@@ -8,13 +8,13 @@ Go to [Home](index.html)
 
 
 ## Week 1
-**Introduction to Game Design**
+**Introduction**
 - [Introduction to Game Design](week1/)
-- **Reading**: [Crawford - Chapter 1](readings/crawford.pdf)
+- **Reading**:	<a href="readings/crawford.pdf" target="blank">Crawford - Chapter 1</a>
 - [Publishing on Medium](week1/medium.html)
 - **Blog Response**: What is a game?
 - **Lab**: Set up development environment
-	- Using Brackets [Download](http://brackets.io/)
+	- Using Brackets <a href="http://brackets.io/" target="blank">Download</a>
 	- Basic HTML/CSS page
 	- [Download p5.js](https://github.com/processing/p5.js/releases/download/0.5.14/p5.min.js)
 	- [Download p5.play](https://github.com/molleindustria/p5.play/archive/master.zip)
@@ -28,7 +28,7 @@ Go to [Home](index.html)
 	- Write short descriptions of each and how they work in the game
 
 ## Week 2
-**Character Design**
+**Character**
 - [Character Design](week2/)
 - **Reading**: [McCloud - Chapter 2](readings/mccloud.pdf)
 - **Blog Response**: Write about a video game character and how it fits into the realism - cartoon spectrum.
@@ -45,7 +45,7 @@ Go to [Home](index.html)
 	- Post screen shots / photos of everything on the blog
 
 ## Week 3
-**Game Setting**
+**Setting**
 - [Game Setting](week3/)
 - **Reading**: [The Designer's Notebook: Sorting Out the Genre Muddle](https://www.gamasutra.com/view/feature/132463/the_designers_notebook_sorting_.php)
 - **Blog Response**: What is your favorite game genre?  (If you don't have one, why not?)
@@ -63,7 +63,7 @@ Go to [Home](index.html)
 	- Post screen shots / photos of everything on the blog
 
 ## Week 4
-**Game Genre**
+**Genre**
 - [Game Genre](week4/)
 - **Reading**: Watch [Early Video Game History](https://www.youtube.com/watch?v=uuxoThzFPPw) and [A Brief History of Video Games](https://www.youtube.com/watch?v=GoyGlyrYb9c) and look at [Video Game History Timeline](http://www.museumofplay.org/about/icheg/video-game-history/timeline)
 - **Blog**: Reflect on the relationship between technology and games based on the readings (viewings)
@@ -74,7 +74,7 @@ Go to [Home](index.html)
 	- Post images and explanations on blog
 
 ## Week 5
-**Video games and art**
+**Art**
 - Present Midterm game ideas
 - [Video Games & Art](week5/)
 - **Reading**: Play [Syoban Action](https://int3.github.io/open-syobon-action.js/)
@@ -120,7 +120,7 @@ Go to [Home](index.html)
 	- Using <a href="https://jfxr.frozenfractal.com/" target="blank">jfxr</a>, <a href="http://thirdcog.eu/apps/cfxr" target="blank">cfxr</a>, or other software
 	- Start working on midterm
 
-## Week 8 & 9
+## Week 8/9
 **Midterm**
 - In class workshop
 - Midterm grading: 5 categories
@@ -170,7 +170,7 @@ Go to [Home](index.html)
 	- Testing feedback will be incorporated into the final
 
 ## Week 13
-**Non-player AI**
+**Non-player Character & AI**
 - User testing workshop
 - **Lab**
 	- Enemy AI
@@ -180,15 +180,10 @@ Go to [Home](index.html)
 	- Document the feedback in a blog post
 	- Choose three things to work on for the final
 
+## Week 14/15
+**Final Workshop**
+
 <!-- 
-
-week	lecture			lab
-14		workshop		workshop
-15 		final 			final
-
-github, collaboration
-storytelling in games
-game worlds
 
 http://owenroberts.github.io/videogames/week8/index.html
 http://imranunit40.blogspot.com/2015/05/goals-challenges-and-rewards.html
@@ -196,6 +191,4 @@ http://jeremycouillard.com/newMedia/gameDesign.html
 http://graysonearle.com/edu/gamepro/
 	- https://www.primagames.com/games/super-mario-3d-world/feature/15-greatest-moments-sega-and-nintendo-16-bit-console-war
 	- http://keithburgun.net/randomness-and-game-design/
-
-
  -->
