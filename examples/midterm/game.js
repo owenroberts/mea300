@@ -18,7 +18,7 @@ var score = 0;
 */
 
 /* audio */
-const jump_files = ["assets/sfx/jump0.wav", "assets/sfx/jump1.wav", "assets/sfx/jump2.wav"];
+const jump_files = ["assets/sfx/Jump0.wav", "assets/sfx/Jump1.wav", "assets/sfx/Jump2.wav"];
 var jump_sfx = [];
 const land_files =  ["assets/sfx/land0.wav", "assets/sfx/land1.wav", "assets/sfx/land2.wav", "assets/sfx/land3.wav"];
 var land_sfx = [];
