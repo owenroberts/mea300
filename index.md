@@ -1,48 +1,55 @@
 ---
 layout: main
-title: MEA 300 ~ Game Design ~ Home
-dek: Class info, notes and schedule
+title: Game Design
 ---
 
 This is the class page of MEA 300 at BMCC.
 
 The class notes, schedule and assignments are all found here.
 - [Schedule](schedule.html)
-- <a href="https://docs.google.com/document/d/1NSgIqeiew5Jrap1xUjwmvWuU1OP0GduUfIArsi4jDTQ/edit?usp=sharing" target="blank">Syllabus</a>
-- <a href="https://mea300.slack.com/" target="blank">Slack channel</a>
-- <a href="https://medium.com/mea-300-game-design" target="blank">Blog</a>
-- <a href="http://piratepad.net/mea300" target="blank">Pirate pad</a>
+- [Syllabus](
+https://docs.google.com/document/d/1XAmwL6OhTdM7VMpzXP8DvaXdy_NN0mJm076YAr5lXdM/edit?usp=sharing
+){:target="blank"}
+- [Blog](https://medium.com/mea-300-game-design){:target="blank"}
+- [Student Work](student_work/)
+- [Pirate Pad](http://piratepad.net/mea300){:target="blank"}
 
-## Fall 2017
+<!-- - <a href="https://mea300.slack.com/" target="blank">Slack channel</a> -->
+
+## Class Description
+MEA 300 will focus on a specific theme, concept, technology or methodology to be announced in advance. Topics for the following semester will be made available by the Media Arts and Technology Department during registration. Each section of the course will cover in depth a single special topic related to media arts and technology, such as one of the following: User Experience Design, Physical Computing, 3D and Laser Printing, Game Design, Documentary Film Production, Experimental Film, Journalism, Media Production, Project Management, Interactive Media, Augmented Reality, Virtual Reality, Television News Production. 
+
+## Fall 2018
 - Instructor: Owen Roberts
 - Email: oroberts AT bmcc DOT cuny  DOT edu
 - Office: S622J
 - Office extension: 8057
-- Office hours: Tuesday 1pm - 3pm, Thursday 2pm - 3pm, Wednesday afternoon by appointment
-- Class times: Tuesday & Thursday 3:45 - 5:25pm
-- 199 Chambers room N550
+- Office hours: Monday 2pm - 5pm, Wednesday afternoon by appointment
+- Class times: Tuesday & Thursday 4:00 - 5:40 PM
+- Fiterman 706
 
 ## Turning in assignments
+- Assignments turned in on Blackboard
+- Late assignments are 25 points off
 
-- Assignments are due the night before class
-- DM @owen a URL to the assignment on your blog or GitHub
-- Late assignments are automatic 20 points off
+## Citations for code resources
+- Coding assignments must use citations for any code borrowed from resources outside of class, including Google, Stack Overflow, YouTube or any tutorial, even if it's as little as one line of code
+- This is good practice to keep track of resources as well
+- In comments at the top of include a link to the resource
+
 
 ## Software
-- Text Editor: [Brackets](http://brackets.io/)
+- Text Editor: [Brackets](http://brackets.io/){:target="blank"}
 - Browser: Chrome
-- GitHub
-- Photoshop
 - Audacity
-- cfxr
-
+- [Piskel](https://www.piskelapp.com/){:target="blank"}
+- [jfxr](https://jfxr.frozenfractal.com/){:target="blank"}
+- [Audio Tool](https://www.audiotool.com/app){:target="blank"} 
 
 ## Computer Labs
-
 Computers are available for student usage in the locations listed on [http://www.bmcc.cuny.edu/it](http://www.bmcc.cuny.edu/it)
 
 ## Tutoring
-
 For MMP and MMA tutoring, please visit BMCC's [tutoring schedule](http://www.bmcc.cuny.edu/lrc/schedule.jsp)
 
 ## Topics
