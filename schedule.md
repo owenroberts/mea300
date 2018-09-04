@@ -1,24 +1,20 @@
 ---
 layout: main
-title: MEA 300 ~ Schedule
-dek: Schedule with class notes & assignments
+title: Schedule
 ---
-
-Go to [Home](index.html)
 
 
 ## Week 1 **Introduction**
-- [Introduction to Game Design](week1/)
+- [Introduction to Game Design](notes/intro)
 - **Reading**:	<a href="readings/crawford.pdf" target="blank">Crawford - Chapter 1</a>
-- [Publishing on Medium](week1/medium.html)
-- **Blog Response**: What is a game?
+- [Publishing on Medium](notes/medium)
 - **Lab**: Set up development environment
 	- Using Brackets <a href="http://brackets.io/" target="blank">Download</a>
 	- Basic HTML/CSS page
 	- [Download p5.js](https://github.com/processing/p5.js/releases/download/0.5.14/p5.min.js)
 	- [Download p5.play](https://github.com/molleindustria/p5.play/archive/master.zip)
-	- [Lab](week1/lab/) & [code](https://github.com/owenroberts/mea300/tree/master/week1/lab) & [notes](week1/lab.html)
-- **Assignment 1**
+	- [Lab](labs/{{site.semester}}/week1/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week1/lab){:target="blank"} & [notes](labs/{{site.semester}}/week1/lab.html)
+- **Assignment 1: Blog Response**
 	- Write a post on the class blog
 	- Choose a game that you are currently playing or played recently
 	- Identify the Goals, Obstacles and Rewards of the game
@@ -26,16 +22,16 @@ Go to [Home](index.html)
 	- Use screen shots to show how they are represented visually
 	- Write short descriptions of each and how they work in the game
 
-## Week 2
-**Character**
-- [Character Design](week2/)
+## Week 2 **Character**
+- [Character Design](notes/character)
+- [Piskel App](https://www.piskelapp.com/){:target="blank"}
 - **Reading**: [McCloud - Chapter 2](readings/mccloud.pdf)
-- **Blog Response**: Write about a video game character and how it fits into the realism - cartoon spectrum.
+<!-- - **Blog Response**: Write about a video game character and how it fits into the realism - cartoon spectrum. -->
 - **Lab**: Add character to game
 	- Sprites, image and animation
 	- Events and input
-	- [Lab](week2/lab/) & [code](https://github.com/owenroberts/mea300/tree/master/week2/lab) & [notes](week2/lab.html)
-- **Assignment 2**
+	- [Lab](week2/lab/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/week2/lab){:target="blank"} & [notes](week2/lab.html)
+- **Assignment 2: Character Design**
 	- Concept design for main character in video game
 	- At least 5 sketches
 	- Digital version of favorite sketch
@@ -43,11 +39,11 @@ Go to [Home](index.html)
 	- Create sprites for idle, running, jumping states
 	- Post screen shots / photos of everything on the blog
 
-## Week 3
-**Setting**
+## Week 3 **Setting**
 - [Game Setting](week3/)
 - **Reading**: [The Designer's Notebook: Sorting Out the Genre Muddle](https://www.gamasutra.com/view/feature/132463/the_designers_notebook_sorting_.php)
-- **Blog Response**: What is your favorite game genre?  (If you don't have one, why not?)
+<!-- - **Blog Response**: What is your favorite game genre?  (If you don't have one, why not?)
+ -->
 - **Lab**
 	- Platform, foreground and background elements
 	- Loops, booleans and random
@@ -61,23 +57,23 @@ Go to [Home](index.html)
 	- Create at least 3 more scenic elements (trees, clouds, street lamps etc)
 	- Post screen shots / photos of everything on the blog
 
-## Week 4
-**Genre**
+## Week 4 **Genre**
 - [Game Genre](week4/)
 - **Reading**: Watch [Early Video Game History](https://www.youtube.com/watch?v=uuxoThzFPPw) and [A Brief History of Video Games](https://www.youtube.com/watch?v=GoyGlyrYb9c) and look at [Video Game History Timeline](http://www.museumofplay.org/about/icheg/video-game-history/timeline)
-- **Blog**: Reflect on the relationship between technology and games based on the readings (viewings)
-- **Assignment 4**
+<!-- - **Blog**: Reflect on the relationship between technology and games based on the readings (viewings)
+ -->
+ - **Assignment 4**
 	- Design 5 potential *obstacles* for your game
 	- Sketches/pixel art/Illustrator art all okay
 	- Explain how the obstacles interact with character
 	- Post images and explanations on blog
 
-## Week 5
-**Art**
+## Week 5 **Art**
 - Present Midterm game ideas
 - [Video Games & Art](week5/)
 - **Reading**: Play [Syoban Action](https://int3.github.io/open-syobon-action.js/)
-- **Blog**: How does Syoban Action play with video game expectations?
+<!-- - **Blog**: How does Syoban Action play with video game expectations?
+ -->
 - **Lab**
 	- Groups, loops
 	- collides & overlap
@@ -88,11 +84,11 @@ Go to [Home](index.html)
 	- Post screen shots and explanation of how each reward could help the player advance in the game
 	- Post on Medium
 
-## Week 6
-**Indie games**
+## Week 6 **Indie games**
 - [Indie games](week6/indie.html)
 - **Reading**: Find a game on <a href="https://itch.io/" target="blank">itch.io</a> to play
-- **Blog**: Write about the game you found, take screen shots of goals, obstacles and rewards
+<!-- - **Blog**: Write about the game you found, take screen shots of goals, obstacles and rewards
+ -->
 - **Lab**
 	- Camera
 	- Scenes
@@ -103,12 +99,11 @@ Go to [Home](index.html)
 	- Post on the Medium blog
 	- Write about how the rewards and obstacles interact with the player/character
 	
-## Week 7
-**Sound**
+## Week 7 **Sound**
 - [Sound effects](week7/sound.html)
-- **Blog**: Using the game from week 6, write about the sounds accompanying the obstacles and rewards in the game
+<!-- - **Blog**: Using the game from week 6, write about the sounds accompanying the obstacles and rewards in the game -->
 - **Lab**
-	- Sound w <a href="https://jfxr.frozenfractal.com/" target="blank">jfxr</a>
+	- Sound with <a href="https://jfxr.frozenfractal.com/" target="blank">jfxr</a>
 	- Sound library <a href="https://raw.githubusercontent.com/processing/p5.js-sound/master/lib/p5.sound.js" target="blank">p5 sound library</a>
 	- Selecting random sounds/images
 	- Setting colliders
@@ -119,8 +114,7 @@ Go to [Home](index.html)
 	- Using <a href="https://jfxr.frozenfractal.com/" target="blank">jfxr</a>, <a href="http://thirdcog.eu/apps/cfxr" target="blank">cfxr</a>, or other software
 	- Start working on midterm
 
-## Week 8/9
-**Midterm**
+## Week 8/9 **Midterm**
 - In class workshop
 - Midterm grading: 5 categories
 	- Graphics for all sprites
@@ -131,8 +125,7 @@ Go to [Home](index.html)
 - Midterm Presentations
 - Discuss Final project
 
-## Week 10
-**Browser Games**
+## Week 10 **Browser Games**
 - Present Midterm
 - [Browser Games](week10/)
 - **Lab**
@@ -143,8 +136,7 @@ Go to [Home](index.html)
 	- Include images of the assets from your game
 	- What three features of your game are most important/unique?
 
-## Week 11
-**Emergence & Progression**
+## Week 11 **Emergence & Progression**
 - [Emergence & Progression](week11/)
 - **Lab**
 	- Levels
@@ -156,8 +148,7 @@ Go to [Home](index.html)
 	- Chart how the game progresses or increases in difficulty
 	- Design interface for moving in between levels
 
-## Week 12
-**User Testing**
+## Week 12 **User Testing**
 - [User Testing](week12/)
 - **Lab**
 	- User interface
@@ -168,8 +159,7 @@ Go to [Home](index.html)
 	- We will review the surveys next week and then send to at least 5 testers
 	- Testing feedback will be incorporated into the final
 
-## Week 13
-**Non-player Character & AI**
+## Week 13 **Non-player Character & AI**
 - User testing workshop
 - **Lab**
 	- Enemy AI
@@ -185,8 +175,7 @@ Go to [Home](index.html)
 	- Document the feedback in a blog post
 	- Choose three things to work on for the final
 
-## Week 14/15
-**Final Workshop**
+## Week 14/15 **Final Workshop**
 
 <!-- 
 
