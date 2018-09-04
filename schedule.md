@@ -1,22 +1,18 @@
 ---
 layout: main
-title: MEA 300 ~ Schedule
-dek: Schedule with class notes & assignments
+title: Schedule
 ---
 
-Go to [Home](index.html)
-
-
 ## Week 1 **Introduction**
-- [Introduction to Game Design](week1/)
+- [Introduction to Game Design](notes/intro)
 - **Reading**:	<a href="readings/crawford.pdf" target="blank">Crawford - Chapter 1</a>
-- [Publishing on Medium](week1/medium.html)
+- [Publishing on Medium](notes/medium)
 - **Lab**: Set up development environment
 	- Using Brackets <a href="http://brackets.io/" target="blank">Download</a>
 	- Basic HTML/CSS page
 	- [Download p5.js](https://github.com/processing/p5.js/releases/download/0.5.14/p5.min.js)
 	- [Download p5.play](https://github.com/molleindustria/p5.play/archive/master.zip)
-	- [Lab](week1/lab/) & [code](https://github.com/owenroberts/mea300/tree/master/week1/lab) & [notes](week1/lab.html)
+	- [Lab](labs/{{site.semester}}/week1/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week1/lab){:target="blank"} & [notes](labs/{{site.semester}}/week1/lab.html)
 - **Assignment 1: Blog Response**
 	- Write a post on the class blog
 	- Choose a game that you are currently playing or played recently
@@ -26,13 +22,14 @@ Go to [Home](index.html)
 	- Write short descriptions of each and how they work in the game
 
 ## Week 2 **Character**
-- [Character Design](week2/)
+- [Character Design](notes/character)
+- [Piskel App](https://www.piskelapp.com/){:target="blank"}
 - **Reading**: [McCloud - Chapter 2](readings/mccloud.pdf)
 <!-- - **Blog Response**: Write about a video game character and how it fits into the realism - cartoon spectrum. -->
 - **Lab**: Add character to game
 	- Sprites, image and animation
 	- Events and input
-	- [Lab](week2/lab/) & [code](https://github.com/owenroberts/mea300/tree/master/week2/lab) & [notes](week2/lab.html)
+	- [Lab](week2/lab/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/week2/lab){:target="blank"} & [notes](week2/lab.html)
 - **Assignment 2: Character Design**
 	- Concept design for main character in video game
 	- At least 5 sketches
