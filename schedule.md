@@ -7,8 +7,7 @@ dek: Schedule with class notes & assignments
 Go to [Home](index.html)
 
 
-## Week 1
-**Introduction**
+## Week 1 **Introduction**
 - [Introduction to Game Design](week1/)
 - **Reading**:	<a href="readings/crawford.pdf" target="blank">Crawford - Chapter 1</a>
 - [Publishing on Medium](week1/medium.html)
