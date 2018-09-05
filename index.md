@@ -12,7 +12,7 @@ https://docs.google.com/document/d/1XAmwL6OhTdM7VMpzXP8DvaXdy_NN0mJm076YAr5lXdM/
 ){:target="blank"}
 - [Blog](https://medium.com/mea-300-game-design){:target="blank"}
 - [Student Work](student_work/)
-- [Pirate Pad](http://piratepad.net/mea300){:target="blank"}
+- [Public Pad](https://pad.riseup.net/p/mea300){:target="blank"}
 
 <!-- - <a href="https://mea300.slack.com/" target="blank">Slack channel</a> -->
 

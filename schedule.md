@@ -13,7 +13,7 @@ title: Schedule
 	- Basic HTML/CSS page
 	- [Download p5.js](https://github.com/processing/p5.js/releases/download/0.5.14/p5.min.js)
 	- [Download p5.play](https://github.com/molleindustria/p5.play/archive/master.zip)
-	- [Lab](labs/{{site.semester}}/week1/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week1/lab){:target="blank"} & [notes](labs/{{site.semester}}/week1/lab.html)
+	- [Lab](labs/{{site.semester}}/week1/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week1/){:target="blank"} & [notes](labs/{{site.semester}}/week1/lab.html)
 - **Assignment 1: Blog Response**
 	- Write a post on the class blog
 	- Choose a game that you are currently playing or played recently
@@ -25,6 +25,7 @@ title: Schedule
 ## Week 2 **Character**
 - [Character Design](notes/character)
 - [Piskel App](https://www.piskelapp.com/){:target="blank"}
+- [Adobe Animate CC Guide](https://www.youtube.com/watch?v=3iXSQ8VcPcU){:target="blank"}
 - **Reading**: [McCloud - Chapter 2](readings/mccloud.pdf)
 <!-- - **Blog Response**: Write about a video game character and how it fits into the realism - cartoon spectrum. -->
 - **Lab**: Add character to game
