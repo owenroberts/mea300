@@ -31,7 +31,7 @@ title: Schedule
 - **Lab**: Add character to game
 	- Sprites, image and animation
 	- Events and input
-	- [Lab](week2/lab/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/week2/lab){:target="blank"} & [notes](week2/lab.html)
+	- [Lab](labs/{{site.semester}}/week2/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week2/){:target="blank"} & [notes](labs/{{site.semester}}/week2/lab.html)
 - **Assignment 2: Character Design**
 	- Concept design for main character in video game
 	- At least 5 sketches
