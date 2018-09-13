@@ -27,7 +27,6 @@ title: Schedule
 - [Piskel App](https://www.piskelapp.com/){:target="blank"}
 - [Adobe Animate CC Guide](https://www.youtube.com/watch?v=3iXSQ8VcPcU){:target="blank"}
 - **Reading**: [McCloud - Chapter 2](readings/mccloud.pdf)
-<!-- - **Blog Response**: Write about a video game character and how it fits into the realism - cartoon spectrum. -->
 - **Lab**: Add character to game
 	- Sprites, image and animation
 	- Events and input
@@ -41,21 +40,18 @@ title: Schedule
 	- Post screen shots / photos of everything on the blog
 
 ## Week 3 **Setting**
-- [Game Setting](week3/)
+- [Game Setting](notes/setting)
 - **Reading**: [The Designer's Notebook: Sorting Out the Genre Muddle](https://www.gamasutra.com/view/feature/132463/the_designers_notebook_sorting_.php)
-<!-- - **Blog Response**: What is your favorite game genre?  (If you don't have one, why not?)
- -->
 - **Lab**
 	- Platform, foreground and background elements
 	- Loops, booleans and random
 	- [Lab](week3/lab/) & [code](https://github.com/owenroberts/mea300/tree/master/week3/lab) & [notes](week3/lab.html)
 - **Assignment 3**
 	- Design scenic assets for your game
-	- Using a similar or related aesthetic style of your character create sprite images for the game setting
-	- Create at least 2 backgrounds
-	- Create at least 1 foreground element
-	- Create at least 2 platforms that the player can stand on
-	- Create at least 3 more scenic elements (trees, clouds, street lamps etc)
+	- Create at least 1 background element (non interactive)
+	- Create at least 1 foreground element (non interactive)
+	- Create at least 1 platforms that the player can stand on
+	- Create at least 2 more scenic elements (interactive or not)
 	- Post screen shots / photos of everything on the blog
 
 ## Week 4 **Genre**
