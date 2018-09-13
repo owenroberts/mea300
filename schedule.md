@@ -176,6 +176,26 @@ title: Schedule
 
 <!-- 
 
+labs
+			17f							18f
+week 1		click Sprites 				click sprites	
+week 2		add sprites 				sprite sheets
+			move character.vel 			player.pos +=
+week 3		platform 					platform
+			gravity 					gravity
+			jump, speed, .isJumping		jump
+			loop clouds + bushes		collide ?
+			collide						spawn with timer 
+										or frameCount?
+week 4		no lab?
+week 5		group
+			loop walls
+			enemies
+			health
+week 6
+week 7
+week 8	
+
 http://owenroberts.github.io/videogames/week8/index.html
 http://imranunit40.blogspot.com/2015/05/goals-challenges-and-rewards.html
 http://jeremycouillard.com/newMedia/gameDesign.html
