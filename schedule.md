@@ -30,6 +30,7 @@ title: Schedule
 - **Lab**: Add character to game
 	- Sprites, image and animation
 	- Events and input
+	- Booleans
 	- [Lab](labs/{{site.semester}}/week2/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week2/){:target="blank"} & [notes](labs/{{site.semester}}/week2/lab.html)
 - **Assignment 2: Character Design**
 	- Concept design for main character in video game
@@ -42,11 +43,10 @@ title: Schedule
 ## Week 3 **Setting**
 - [Game Setting](notes/setting)
 - **Reading**: [The Designer's Notebook: Sorting Out the Genre Muddle](https://www.gamasutra.com/view/feature/132463/the_designers_notebook_sorting_.php)
-- **Lab**
+- **Lab: Scenic Assets**
 	- Platform, foreground and background elements
-	- Loops, booleans and random
-	- [Lab](week3/lab/) & [code](https://github.com/owenroberts/mea300/tree/master/week3/lab) & [notes](week3/lab.html)
-- **Assignment 3**
+	- Random, more booleans, basic physics
+- **Assignment 3: Scenic Assets**
 	- Design scenic assets for your game
 	- Create at least 1 background element (non interactive)
 	- Create at least 1 foreground element (non interactive)
