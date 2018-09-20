@@ -46,6 +46,7 @@ title: Schedule
 - **Lab: Scenic Assets**
 	- Platform, foreground and background elements
 	- Random, more booleans, basic physics
+	- [Lab](labs/{{site.semester}}/week3/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week3/){:target="blank"} & [notes](labs/{{site.semester}}/week3/lab.html)
 - **Assignment 3: Scenic Assets**
 	- Design scenic assets for your game
 	- Create at least 1 background element (non interactive)
