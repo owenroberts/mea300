@@ -10,20 +10,19 @@ We covered a lot this week in the lab so I want to review what we talked about h
 ## Project setup
 We started by setting up a basic HTML/CSS webpage to be a container for the game.  This semester we're making web based games because the browser is going to do a lot of the work for in terms of rendering the application and using canvas graphics.
 
-First we made a new folder on the Desktop called *myfirstgame/*, which, of course, can be named whatever you prefer.
+First we made a new folder on the Desktop called *game/*, which, of course, can be named whatever you want to call the game.
 
 We also downloaded the `p5.js` and `p5.play` libraries and added them to the folder with `index.html` and `style.css`.
 
 The HTML and CSS pages we made a extremely simple.
 
-Here's the [HTML page](https://github.com/owenroberts/mea300/blob/master/week1/lab/index.html) and the [CSS](https://github.com/owenroberts/mea300/blob/master/week1/lab/style.css).
+Here's the [HTML page](https://github.com/owenroberts/mea300/blob/master/labs/18f/week1/index.html) and the [CSS](https://github.com/owenroberts/mea300/blob/master/labs/18f/week1/style.css).
 
+Then we made the *game.js* file for our main game scripting.
 
 ## setup()
 
 We started with the two main functions in any p5 based JavaScript program: `setup` & `draw`
-
-
 
 
 ```
