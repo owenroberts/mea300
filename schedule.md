@@ -56,7 +56,7 @@ title: Schedule
 	- Post screen shots / photos of everything on the blog
 
 ## Week 4 **Genre**
-- [Game Genre](week4/)
+- [Game Genre](notes/genre)
 - **Reading**: Watch [Early Video Game History](https://www.youtube.com/watch?v=uuxoThzFPPw) and [A Brief History of Video Games](https://www.youtube.com/watch?v=GoyGlyrYb9c) and look at [Video Game History Timeline](http://www.museumofplay.org/about/icheg/video-game-history/timeline)
 <!-- - **Blog**: Reflect on the relationship between technology and games based on the readings (viewings)
  -->
