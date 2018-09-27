@@ -58,9 +58,12 @@ title: Schedule
 ## Week 4 **Genre**
 - [Game Genre](notes/genre)
 - **Reading**: Watch [Early Video Game History](https://www.youtube.com/watch?v=uuxoThzFPPw) and [A Brief History of Video Games](https://www.youtube.com/watch?v=GoyGlyrYb9c) and look at [Video Game History Timeline](http://www.museumofplay.org/about/icheg/video-game-history/timeline)
-<!-- - **Blog**: Reflect on the relationship between technology and games based on the readings (viewings)
- -->
- - **Assignment 4**
+- **Lab: Obstacles**
+	- Groups, loops
+	- Collisions, death
+	- "wrapping" sprites
+	- [Lab](labs/{{site.semester}}/week4/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week4/){:target="blank"} & [notes](labs/{{site.semester}}/week4/lab.html)
+- **Assignment 4**
 	- Design 5 potential *obstacles* for your game
 	- Sketches/pixel art/Illustrator art all okay
 	- Explain how the obstacles interact with character
