@@ -80,10 +80,6 @@ function setup() {
         trees.add(tree);
     }
 
-    var x = random(0, 640);
-    var y = random(250, 300);
-    tree2 = createSprite(x, y);
-    tree2.addImage("default", tree_img);
 
     arrows = new Group();
     // loop - structure in JavaScript that repeats code
