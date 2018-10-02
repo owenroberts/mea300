@@ -66,7 +66,6 @@ title: Schedule
 	- Post images and explanations on blog
 
 ## Week 5 **Art**
-- Present Midterm game ideas
 - [Video Games & Art](week5/)
 - **Reading**: Play [Syoban Action](https://int3.github.io/open-syobon-action.js/)
 <!-- - **Blog**: How does Syoban Action play with video game expectations?
