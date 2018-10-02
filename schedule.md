@@ -46,6 +46,7 @@ title: Schedule
 - **Lab: Scenic Assets**
 	- Platform, foreground and background elements
 	- Random, more booleans, basic physics
+	- [Lab](labs/{{site.semester}}/week3/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week3/){:target="blank"} & [notes](labs/{{site.semester}}/week3/lab.html)
 - **Assignment 3: Scenic Assets**
 	- Design scenic assets for your game
 	- Create at least 1 background element (non interactive)
@@ -55,11 +56,14 @@ title: Schedule
 	- Post screen shots / photos of everything on the blog
 
 ## Week 4 **Genre**
-- [Game Genre](week4/)
+- [Game Genre](notes/genre)
 - **Reading**: Watch [Early Video Game History](https://www.youtube.com/watch?v=uuxoThzFPPw) and [A Brief History of Video Games](https://www.youtube.com/watch?v=GoyGlyrYb9c) and look at [Video Game History Timeline](http://www.museumofplay.org/about/icheg/video-game-history/timeline)
-<!-- - **Blog**: Reflect on the relationship between technology and games based on the readings (viewings)
- -->
- - **Assignment 4**
+- **Lab: Obstacles**
+	- Groups, loops
+	- Collisions, death
+	- "wrapping" sprites
+	- [Lab](labs/{{site.semester}}/week4/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week4/){:target="blank"} & [notes](labs/{{site.semester}}/week4/lab.html)
+- **Assignment 4**
 	- Design 5 potential *obstacles* for your game
 	- Sketches/pixel art/Illustrator art all okay
 	- Explain how the obstacles interact with character
