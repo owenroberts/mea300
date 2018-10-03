@@ -2,8 +2,8 @@
     global variables
 */
 var player;
-var jump_speed = 24;
-var player_speed = 4;
+var jump_speed = 15;
+var game_speed = 6;
 var GRAVITY = 1;
 
 // player animations
@@ -60,25 +60,32 @@ function setup() {
     player.addAnimation("idle", idle_animation);
     player.addAnimation("run", run_animation);
     player.addAnimation("jump", jump_animation);
-    player.isJumping = false;
+    player.isJumping = true;
     player.scale = 0.5;
     // player.velocity.x = player_speed;
 
-    // set up platform
     platforms = new Group();
-    for (var i = 0; i < 4; i++) {
-        var x = i * 300;
-        var y = 300;
-        var platform = createSprite(x, y);
+
+    // start platform
+    var startPlatform = createSprite(width/2, 300, width, 100);
+    startPlatform.debug = true;
+    startPlatform.velocity.x = -game_speed;
+    startPlatform.isStartPlatform = true;
+    platforms.add(startPlatform);
+
+    var y = 300;
+    for (var i = 0; i < 3; i++) {
+        var x = width + (i+1) * 256;
+        
+        var platform = createSprite(x, y, 128, 32);
         platform.debug = true;
-        platform.setCollider("rectangle", 0, 0, 256, 32);
-        platform.addImage("default", platform_img);
-        platform.velocity.x = -1;
-        platform.immovable = true;
-        platform.mass = 5;
+        platform.setCollider("rectangle", 0, 0, 128, 32);
+        // platform.addImage("default", platform_img);
+        platform.velocity.x = -game_speed;
         platforms.add(platform);
+
+        y += random(-50, 50);
     }
-    
 
     // set up scenery
     clouds = new Group();
@@ -86,7 +93,7 @@ function setup() {
         var x = random(0, width);
         var cloud = createSprite(x, 100);
         cloud.addAnimation("default", cloud_animation);
-        cloud.velocity.x = random(-1, 1);
+        cloud.velocity.x = -random(1, 2);
         clouds.add(cloud);
     }
 
@@ -96,9 +103,9 @@ function setup() {
         var y = random(250, 300);
         var tree = createSprite(x, y);
         tree.addImage("default", tree_img);
+        tree.velocity.x = -game_speed/4 + random(-0.5, 0.5);
         trees.add(tree);
     }
-
 
     arrows = new Group();
     // loop - structure in JavaScript that repeats code
@@ -121,9 +128,6 @@ function draw() {
     // platforms
     for (var i = 0; i < platforms.length; i++) {
         var platform = platforms[i];
-        if (!i) {
-            // console.log(player.position.y + player.collider.size().y / 2, platform.position.y - platform.collider.size().y / 2)
-        }
         if (player.collide(platform)) {
             player.isJumping = false;
             player.changeAnimation("run");
@@ -131,19 +135,21 @@ function draw() {
             player.isGrounded = true;
         }
         // wrap platforms
-        if (platform.position.x < -platform.collider.size().x/2) {
-            console.log('platform wrap')
+        if (platform.collider.right() < 0) {
+            if (platform.isStartPlatform) {
+                platform.remove();
+            }
             platform.position.x = width + platform.width/2;
+            platform.position.y += random(-50, 50);
         }
     }
 
-    if (!player.isGrounded) {
+    if (player.isJumping) {
         player.velocity.y += GRAVITY;
     }
 
     // character movement
     if (keyDown("space") && !player.isJumping) {
-        console.log('platform wrap')
         player.changeAnimation("jump");
         player.velocity.y -= jump_speed;
         player.isJumping = true;
@@ -151,7 +157,6 @@ function draw() {
 
     // arrows hit player
     arrows.overlap(player, function (arrow) {
-        //        arrow.remove();
         arrow.position.x = random(width, width * 3);
         player.position.y = -player.height;
     });
@@ -169,15 +174,22 @@ function draw() {
             clouds[i].position.x = random(width, width * 2);
         }
     }
+     // wrap clouds
+    for (var i = 0; i < trees.length; i++) {
+        if (trees[i].position.x < -100) {
+            trees[i].position.x = random(width, width * 2);
+        }
+    }
 
 
     // player falls below the canvas
-    if (player.position.y - player.height > height) {
+    if (player.collider.top() > height || player.collider.right() < 0) {
+        player.position.x = 60;
         player.position.y = 20;
     }
 
     // camera follows player
-    // camera.position.x = player.position.x + 250;
+    // camera.position.y = player.position.y;
 
     drawSprites();
 }

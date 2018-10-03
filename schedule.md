@@ -75,9 +75,6 @@ title: Schedule
 <!-- - **Blog**: How does Syoban Action play with video game expectations?
  -->
 - **Lab**
-	- Groups, loops
-	- collides & overlap
-	- [Lab](week5/lab/) & [code](https://github.com/owenroberts/mea300/tree/master/week5/lab) & [notes](week5/lab.html)
 - **Assignment 5**
 	- Design 5 potential *rewards* for your game
 	- Same idea as Assignment 4
@@ -92,7 +89,6 @@ title: Schedule
 - **Lab**
 	- Camera
 	- Scenes
-	- [Lab](week6/lab/) & [code](https://github.com/owenroberts/mea300/tree/master/week6/lab) & [notes](week6/lab.html)
 - **Assignment 6**
 	- Add all of the visual assets to the game
 	- Take screen shots/video of the game in progress
