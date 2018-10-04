@@ -85,13 +85,12 @@ title: Schedule
 	- Post on Medium
 
 ## Week 6 **Indie games**
-- [Indie games](week6/indie.html)
+- [Indie games](notes/indie)
 - **Reading**: Find a game on <a href="https://itch.io/" target="blank">itch.io</a> to play
-<!-- - **Blog**: Write about the game you found, take screen shots of goals, obstacles and rewards
- -->
 - **Lab**
-	- Camera
-	- Scenes
+	- Settings file and variables
+	- Start and death scene
+	- Text
 - **Assignment 6**
 	- Add all of the visual assets to the game
 	- Take screen shots/video of the game in progress
