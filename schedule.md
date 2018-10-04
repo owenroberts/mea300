@@ -75,6 +75,9 @@ title: Schedule
 <!-- - **Blog**: How does Syoban Action play with video game expectations?
  -->
 - **Lab**
+	- Distributing platforms
+	- Camera position
+	- [Lab](labs/{{site.semester}}/week5/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week5/){:target="blank"} & [notes](labs/{{site.semester}}/week5/lab.html)
 - **Assignment 5**
 	- Design 5 potential *rewards* for your game
 	- Same idea as Assignment 4
