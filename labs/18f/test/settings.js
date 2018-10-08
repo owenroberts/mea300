@@ -4,13 +4,18 @@ var speed = 6;
 var jump_speed = speed * 3;
 var GRAVITY = 1;
 
+// 0 - intro
+// 1 - game
+// 2 - start over
+var scene = 0;
+
 var gameWidth = 640;
 var gameHeight = 360;
 
 // platforms
 var numPlatforms = 3;
 var platformYStart = 300;
-var platformXStart = 512;
+var platformXStart = 640;
 var platformYChange = 100;
 var platformSpeed = speed;
 

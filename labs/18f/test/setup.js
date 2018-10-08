@@ -2,6 +2,8 @@
 function setup() {
     createCanvas(gameWidth, gameHeight);
 
+    // frameRate(30);
+
     // set up player/character
     player = createSprite(80, 20);
     player.setCollider("rectangle", -5, 0, 55, 115);
@@ -12,23 +14,30 @@ function setup() {
     player.isGrounded = false;
     player.scale = 0.5;
 //    player.velocity.x = 5;
+    
+    platforms = new Group();
+    clouds = new Group();
+    trees = new Group();
+    arrows = new Group();
+}
+
+function build() {
 
     // set up platform
-    var startPlatform = createSprite(80, 300);
-//    startPlatform.debug = true;
+    var startPlatform = createSprite(256, 300);
+    // startPlatform.debug = true;
     startPlatform.setCollider("rectangle", 0, 0, 512, 32);
     startPlatform.addImage("default", start_platform_img);
     startPlatform.velocity.x = -platformSpeed;
     startPlatform.isStartPlatform = true;
-    
-    platforms = new Group();
     platforms.add(startPlatform);
-    
+
+
     var y = platformYStart;
     for (var i = 0; i < numPlatforms; i++) {
         var x = platformXStart + 256 * i;
         var platform = createSprite(x, y, 128, 32);
-//        platform.debug = true;
+       platform.debug = true;
         platform.addImage("default", platform_img);
         platform.velocity.x = -platformSpeed;
         platforms.add(platform);
@@ -36,10 +45,8 @@ function setup() {
         // adjust y
         y += random(-platformYChange, platformYChange);
     }
-    
 
-    // set up scenery
-    clouds = new Group();
+     // set up scenery
     for (var i = 0; i < numClouds; i++) {
         var x = random(0, width);
         var cloud = createSprite(x, cloudY);
@@ -48,7 +55,7 @@ function setup() {
         clouds.add(cloud);
     }
 
-    trees = new Group();
+    
     for (var i = 0; i < numTrees; i ++) {
         var x = random(0, 640);
         var y = random(treeYPositionMin, treeYPositionMax);
@@ -59,7 +66,7 @@ function setup() {
     }
 
 
-    arrows = new Group();
+   // set up obstacles
     // loop - structure in JavaScript that repeats code
     for (var i = 0; i < numArrows; i++) { // happens 3 times
         var x = random(width, width * 3);

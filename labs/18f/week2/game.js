@@ -9,13 +9,13 @@ var run_sheet, run_animation;
 var jump_sheet, jump_animation;
 
 function preload() {
-    idle_sheet = loadSpriteSheet("sprites/main_character/main_character_idle.png", 128, 128, 1);
+    idle_sheet = loadSpriteSheet("sprites/main_character/main_character_idle.png", 128, 128, 16);
     idle_animation = loadAnimation(idle_sheet);
     
-    run_sheet = loadSpriteSheet("sprites/main_character/main_character_running.png", 128, 128, 1);
+    run_sheet = loadSpriteSheet("sprites/main_character/main_character_running.png", 128, 128, 6);
     run_animation = loadAnimation(run_sheet);
     
-    jump_sheet = loadSpriteSheet("sprites/main_character/main_character_jumping.png", 128, 128, 1);
+    jump_sheet = loadSpriteSheet("sprites/main_character/main_character_jumping.png", 128, 128, 30);
     jump_animation = loadAnimation(jump_sheet);
 }
 

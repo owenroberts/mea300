@@ -90,12 +90,15 @@ title: Schedule
 - **Lab**
 	- Settings file and variables
 	- Start and death scene
+	- Build and reset functions
 	- Text
 - **Assignment 6**
-	- Add all of the visual assets to the game
-	- Take screen shots/video of the game in progress
-	- Post on the Medium blog
-	- Write about how the rewards and obstacles interact with the player/character
+	- Add assets to game
+	- Character
+	- 1 platform
+	- 1 obstacle
+	- 1 reward
+	- Create an account on itch.io and upload version 1 of the game
 	
 ## Week 7 **Sound**
 - [Sound effects](week7/sound.html)
