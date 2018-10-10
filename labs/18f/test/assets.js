@@ -17,6 +17,10 @@ var trees, tree_img;
 var arrows; // group
 var arrow_sheet, arrow_animation;
 
+// rewards 
+var hearts;
+var heart_sheet, heart_animation;
+
 function preload() {
     idle_sheet = loadSpriteSheet("sprites/main_character/main_character_idle.png", 128, 128, 16);
     idle_animation = loadAnimation(idle_sheet);

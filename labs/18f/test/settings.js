@@ -4,17 +4,12 @@ var speed = 6;
 var jump_speed = speed * 3;
 var GRAVITY = 1;
 
-// 0 - intro
-// 1 - game
-// 2 - start over
-var scene = 0;
-
 var gameWidth = 640;
 var gameHeight = 360;
 
 // platforms
 var numPlatforms = 3;
-var platformYStart = 300;
+var platformYStart = 250;
 var platformXStart = 640;
 var platformYChange = 100;
 var platformSpeed = speed;
@@ -34,3 +29,11 @@ var numArrows = 1;
 var arrowDistanceMin = gameWidth;
 var arrowDistanceMax = gameWidth * 3;
 var arrowSpeed = speed * 3;
+var arrowYMin = 150;
+var arrowYMax = 250;
+
+// rewards
+var heartXStart = gameWidth;
+var heartYMin = 100;
+var heartYMax = 200;
+var heartSpeed = speed * 0.5;

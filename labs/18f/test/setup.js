@@ -13,12 +13,14 @@ function setup() {
     player.isJumping = false;
     player.isGrounded = false;
     player.scale = 0.5;
+    player.health = 3;
 //    player.velocity.x = 5;
     
     platforms = new Group();
     clouds = new Group();
     trees = new Group();
     arrows = new Group();
+    hearts = new Group();
 }
 
 function build() {
@@ -37,7 +39,6 @@ function build() {
     for (var i = 0; i < numPlatforms; i++) {
         var x = platformXStart + 256 * i;
         var platform = createSprite(x, y, 128, 32);
-       platform.debug = true;
         platform.addImage("default", platform_img);
         platform.velocity.x = -platformSpeed;
         platforms.add(platform);
@@ -70,7 +71,7 @@ function build() {
     // loop - structure in JavaScript that repeats code
     for (var i = 0; i < numArrows; i++) { // happens 3 times
         var x = random(width, width * 3);
-        var y = random(150, 250);
+        var y = random(arrowYMin, arrowYMax);
         var arrow = createSprite(x, y);
         arrow.setCollider("rectangle", 0, 0, 20, 10);
 //        arrow.debug = true;
