@@ -92,6 +92,7 @@ title: Schedule
 	- Start and death scene
 	- Build and reset functions
 	- Text
+	- [Lab](labs/{{site.semester}}/week6/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week6/){:target="blank"} & [notes](labs/{{site.semester}}/week6/lab.html)
 - **Assignment 6**
 	- Add assets to game
 	- Character
@@ -101,7 +102,7 @@ title: Schedule
 	- Create an account on itch.io and upload version 1 of the game
 	
 ## Week 7 **Sound**
-- [Sound effects](week7/sound.html)
+- [Sound effects](notes/sound)
 <!-- - **Blog**: Using the game from week 6, write about the sounds accompanying the obstacles and rewards in the game -->
 - **Lab**
 	- Sound with <a href="https://jfxr.frozenfractal.com/" target="blank">jfxr</a>
