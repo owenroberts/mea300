@@ -99,22 +99,22 @@ title: Schedule
 	- 1 platform
 	- 1 obstacle
 	- 1 reward
-	- Create an account on itch.io and upload version 1 of the game
 	
 ## Week 7 **Sound**
 - [Sound effects](notes/sound)
-<!-- - **Blog**: Using the game from week 6, write about the sounds accompanying the obstacles and rewards in the game -->
 - **Lab**
 	- Sound with <a href="https://jfxr.frozenfractal.com/" target="blank">jfxr</a>
 	- Sound library <a href="https://raw.githubusercontent.com/processing/p5.js-sound/master/lib/p5.sound.js" target="blank">p5 sound library</a>
-	- Selecting random sounds/images
-	- Setting colliders
-	- Object distribution
+	- Random sounds array
 	- [Lab](week7/lab/) & [code](https://github.com/owenroberts/mea300/tree/master/week7/lab) & [notes](week7/lab.html)
 - **Assignment 7**
-	- Add sounds to game
+	- Create sounds for the game
+		- Player jump and land
+		- Player dies/loses
+		- Player hit by obstacle
+		- Player collects reward
 	- Using <a href="https://jfxr.frozenfractal.com/" target="blank">jfxr</a>, <a href="http://thirdcog.eu/apps/cfxr" target="blank">cfxr</a>, or other software
-	- Start working on midterm
+	- Post sounds on Medium
 
 ## Week 8/9 **Midterm**
 - In class workshop
