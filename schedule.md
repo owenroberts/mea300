@@ -109,6 +109,7 @@ title: Schedule
 	- [Lab](week7/lab/) & [code](https://github.com/owenroberts/mea300/tree/master/week7/lab) & [notes](week7/lab.html)
 - **Assignment 7**
 	- Create sounds for the game
+		- Game start
 		- Player jump and land
 		- Player dies/loses
 		- Player hit by obstacle
