@@ -110,7 +110,8 @@ title: Schedule
 	- Selecting random sounds/images
 	- Setting colliders
 	- Object distribution
-	- [Lab](week7/lab/) & [code](https://github.com/owenroberts/mea300/tree/master/week7/lab) & [notes](week7/lab.html)
+	- [Lab](labs/{{site.semester}}/week7/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week7/){:target="blank"} 
+	<!-- & [notes](labs/{{site.semester}}/week7/lab.html) -->
 - **Assignment 7**
 	- Add sounds to game
 	- Using <a href="https://jfxr.frozenfractal.com/" target="blank">jfxr</a>, <a href="http://thirdcog.eu/apps/cfxr" target="blank">cfxr</a>, or other software
