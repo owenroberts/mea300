@@ -13,12 +13,15 @@ function draw() {
 function intro() {
     background("black");
     
+    // text styling
     fill("white");
     textAlign(CENTER, CENTER);
     textFont("Comic Sans MS");
     textSize(50);
     
+    // title 
     text("My First Game", width/2, height/2);
+     // instructions
     text("Press Enter to Start", width/2, height/2 + 100);
 }
 

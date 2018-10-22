@@ -63,7 +63,7 @@ title: Schedule
 	- Collisions, death
 	- "wrapping" sprites
 	- [Lab](labs/{{site.semester}}/week4/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week4/){:target="blank"} & [notes](labs/{{site.semester}}/week4/lab.html)
-- **Assignment 4**
+- **Assignment 4: Obstacles**
 	- Design 5 potential *obstacles* for your game
 	- Sketches/pixel art/Illustrator art all okay
 	- Explain how the obstacles interact with character
@@ -78,7 +78,7 @@ title: Schedule
 	- Distributing platforms
 	- Camera position
 	- [Lab](labs/{{site.semester}}/week5/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week5/){:target="blank"} & [notes](labs/{{site.semester}}/week5/lab.html)
-- **Assignment 5**
+- **Assignment 5: Rewards**
 	- Design 5 potential *rewards* for your game
 	- Same idea as Assignment 4
 	- Post screen shots and explanation of how each reward could help the player advance in the game
@@ -93,12 +93,7 @@ title: Schedule
 	- Build and reset functions
 	- Text
 	- [Lab](labs/{{site.semester}}/week6/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week6/){:target="blank"} & [notes](labs/{{site.semester}}/week6/lab.html)
-- **Assignment 6**
-	- Add assets to game
-	- Character
-	- 1 platform
-	- 1 obstacle
-	- 1 reward
+
 	
 ## Week 7 **Sound**
 - [Sound effects](notes/sound)
@@ -110,7 +105,7 @@ title: Schedule
 	- Object distribution
 	- [Lab](labs/{{site.semester}}/week7/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week7/){:target="blank"} 
 	<!-- & [notes](labs/{{site.semester}}/week7/lab.html) -->
-- **Assignment 7**
+- **Assignment 6: Sound Effects**
 	- Create sounds for the game
 		- Game start
 		- Player jump and land
@@ -122,14 +117,13 @@ title: Schedule
 
 ## Week 8/9 **Midterm**
 - In class workshop
-- Midterm grading: 5 categories
-	- Graphics for all sprites
-	- Sound effects for all interactions
-	- User Interface, instructions
-	- Interactivity
-	- Balance of rewards, obstacles, goals
-- Midterm Presentations
-- Discuss Final project
+- See Blackboard for rubric
+
+## Week 10 **User Testing**
+- [User Testing](week12/)
+
+
+<!-- 
 
 ## Week 10 **Browser Games**
 - Present Midterm
@@ -155,7 +149,6 @@ title: Schedule
 	- Design interface for moving in between levels
 
 ## Week 12 **User Testing**
-- [User Testing](week12/)
 - **Lab**
 	- User interface
 	- [Lab](week12/lab/) & [code](https://github.com/owenroberts/mea300/tree/master/week12/lab)
@@ -183,7 +176,7 @@ title: Schedule
 
 ## Week 14/15 **Final Workshop**
 
-<!-- 
+
 
 labs
 			17f							18f
