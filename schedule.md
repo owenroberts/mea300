@@ -113,7 +113,7 @@ title: Schedule
 		- Player hit by obstacle
 		- Player collects reward
 	- Using <a href="https://jfxr.frozenfractal.com/" target="blank">jfxr</a>, <a href="http://thirdcog.eu/apps/cfxr" target="blank">cfxr</a>, or other software
-	- Post sounds on Medium
+	- ~~Post sounds on Medium~~ Post on Blackboard, medium doesn't allow sound files
 
 ## Week 8/9 **Midterm**
 - In class workshop

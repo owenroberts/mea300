@@ -5,132 +5,126 @@ week: 7
 dek: Lab Notes
 ---
 
-## Brackets setup
+This week we added audio using the [jfxr](https://jfxr.frozenfractal.com/) app.  Adding sound requires creating the sound files, downloading them and adding them to the project folder, then loading the files in *assets.js* and playing the sounds at the right points in *scenes.js* and *game.js*.  I'll review each part here.
 
-This week we discussed the [Beautify](https://github.com/brackets-beautify/brackets-beautify) plugin for brackets and reviewed general code formatting practices.  We also discussed getting rid of the annoying JSLint code error reporting by changing the *Brackets > Preferences* file.  Here's what mine looks like, to copy and paste, I basically just removed the linting setting and turned on `linting.collapsed`:
+## assets.js
+
+### global vars
 
 ```
-{
-    "fonts.fontSize": "12px",
-    "fonts.fontFamily": "'SourceCodePro-Medium', ＭＳ ゴシック, 'MS Gothic', monospace",
-    "useTabChar": true,
-    "linting.collapsed": true
+// sounds
+var deathSound, startSound;
+```
+
+In the sounds section at the top of *assets.js* we created two variables for the single sound effects, the death sound plays the same sound whenever the character dies, and the game starting sound is always the same.
+
+```
+// platform
+var platformHits = [
+    "sfx/platform-hits/hit-0.wav",
+    "sfx/platform-hits/hit-2.wav"
+]; // array 
+var platformHitSounds = []; // empty 
+
+// jump
+var jumps = [
+    "sfx/jumps/jump-0.wav",
+    "sfx/jumps/jump-1.wav",
+    "sfx/jumps/jump-2.wav",
+    "sfx/jumps/jump-3.wav",
+]; // array 
+var jumpSounds = []; // empty 
+```
+
+After that we have two arrays for the platform hit and jump sounds.  An array is a data format in JavaScript that holds a list of values.  For the array of sounds we actually need two arrays, one to hold the sound file paths, and an empty array to add our sounds onto once they get loaded.
+
+### preload
+
+```
+// load sounds 
+deathSound = loadSound("sfx/death.wav");
+startSound = loadSound("sfx/start.wav");
+```
+
+Loading one sound is easy.  The sound variable get assigned the result of the `loadSound` function which takes the argument path to the sound.  I created a `sfx` (sound effects) folder for all the sounds.
+
+```
+// platform hits 
+for (var i = 0; i < platformHits.length; i++) {
+    var s = loadSound(platformHits[i]);
+    platformHitSounds.push(s);
+}
+
+// jump sounds 
+for (var i = 0; i < jumps.length; i++) {
+    var s = loadSound(jumps[i]);
+    jumpSounds.push(s);
 }
 ```
 
-## jfxr
+Loading a list of sounds is a little trickier.  We need a loop to go through the array.  Each loop uses the variable `i` to count each item in the array list.  Each item then gets loaded into a variable `s` which is then added to the array of sounds with the `push` method, which just adds a value to the end of an array.
 
-We reviewed making and downloading sounds with [jfxr](https://jfxr.frozenfractal.com/).
+## scenes.js
 
-## p5.sound.js
+There are two moments in *scenes.js* where we need to play a sound: when the player dies and when the game starts.
 
-We then downloaded the [p5.sound.js](https://raw.githubusercontent.com/processing/p5.js-sound/master/lib/p5.sound.js) library and added it to the game folder.  In order to play sounds in `p5` we use this library.  We also attached it to the `index.html` file:
-
-```
-	<h1>My First Game</h1>
-	<p>by Owen Roberts</p>
-	
-	<script src="p5.min.js"></script>
-	<script src="p5.play.js"></script>
-	<script src="p5.sound.js"></script>
-	<script src="game.js"></script>
-```
-
-## global variables
+### died
 
 ```
-const enemySpeedMin = SPEED/5, enemySpeedMax = SPEED;
-const cloudSpeedMin = SPEED/2, cloudSpeedMax = SPEED;
+// play death sound
+deathSound.play();
 ```
 
-During the lab we began the process of moving all of the hardcoded variables from within the `setup` and other functions to global variables at the beginning of the game program file.  This make it easier to tweak your game because all of the values are in the same place.  We also talked about making the values relative to one another to make it easier to make holistic changes.
+In the `died()` function we play the `deathSound` using the `.play()` method.  This just plays the sound once when the player dies.
+
+### keyPressed
 
 ```
-const cloud_files = [
-	"assets/cloud/cloud0.png", 
-	"assets/cloud/cloud1.png", 
-	"assets/cloud/cloud2.png", 
-	"assets/cloud/cloud3.png"
-];
-```
-
-I added an array of new cloud image files to demonstrate loading a random image for each cloud.
-
-```
-var jump_sfx = [];
-const jump_files = [
-	"assets/sfx/character/jump0.wav", "assets/sfx/character/jump1.wav", "assets/sfx/character/jump2.wav", "assets/sfx/character/jump3.wav"
-];
-
-var hit_sfx = [];
-const hit_files = [
-	"assets/sfx/character/hit0.wav", "assets/sfx/character/hit1.wav", "assets/sfx/character/hit2.wav"
-];
-```
-
-We also have some arrays for sound fx files and arrays to hold the sound files once they get loaded.
-
-## preload
-
-```
-function preload() {
-	for (let i = 0; i < jump_files.length; i++) {
-		const jump_sound = loadSound(jump_files[i]);
-		jump_sfx.push(jump_sound);
-	}
-	
-	for (let i = 0; i < hit_files.length; i++) {
-		const hit_sound = loadSound(hit_files[i]);
-		hit_sfx.push(hit_sound);
-	}
+function keyPressed() {
+    // enter key
+    if (keyCode == 13) {
+        if (scene == "intro" || scene == "restart") {
+            build();
+            // play sound to start game
+            startSound.play();
+            scene = "game";
+        }
+    }
 }
 ```
 
-Using the `preload` function we looped over the sound fx files and loaded them into arrays of sound files.
+If the player hits the enter key in the `intro` or `restart` scene, the start game sound should play: `startSound.play();`.
 
 
-## setup
+## game.js
 
-```
-	clouds = new Group();
-	for (let i = 0; i < NUM_CLOUDS; i++) {
-		const cloud = createSprite(
-			random(width, width * 2),
-			random(0, height / 2),
-			random(50, 100),
-			random(20, 40)
-		);
-		const cloud_img = loadImage(cloud_files[floor(random(0, cloud_files.length))]);
-		cloud.addImage(cloud_img);
-		cloud.velocity.x = -random(cloudSpeedMin, cloudSpeedMax);
-		clouds.add(cloud);
-	}
-```
+In the `game()` function there are a few points where the player interacts with objects in the game that should trigger a sound.
 
-We updated the code in the cloud setup to add random images using the `cloud_files` array and the functions `random` to choose a random index number for the array and `floor` to round that index down to a whole number.
-
-## game
+### game
 
 ```
-	if (character.collide(platform) || character.collide(walls)) {
-		character.velocity.y = 0;
-		if (character.isJumping) {
-			character.isJumping = false;
-			hit_sfx[floor(random(0, hit_sfx.length))].play();
-		}
-	}
+// loop through all platforms
+player.isGrounded = false;
+for (var i = 0; i < platforms.length; i++) {
+    var platform = platforms[i];
+    if (player.collide(platform)) {
+        
+        // play platform collision sound
+        if (player.isJumping) {
+            random(platformHitSounds).play();
+        }
 ```
 
-We added and sound effect for when the character hits the ground or wall after jumping.  We already have a conditional for when the character collides either platform or walls, and we just added a line to play a random sound effect, using the same method used to choose a random image for the clouds.
+The first part is when a player lands on the platform.  To make sure the player is landing and not just standing, we can check if the `player.isJumping` is true first and then play the sounds.  Since we have an array of platform hit sounds, we can play a random sound using the `random` function with the `platformHitSounds` as the parameter and then `.play()`.
 
 ```
-	if (keyWentDown("x")) {
-		if (!character.isJumping) {
-			character.velocity.y -= JUMP_SPEED;
-			character.isJumping = true;
-			jump_sfx[floor(random(0, jump_sfx.length))].play();
-		}
-	}
+if (keyDown("space") && !player.isJumping) {
+    // play jump sound
+    random(jumpSounds).play();
+    player.changeAnimation("jump");
+    player.velocity.y -= jump_speed;
+    player.isJumping = true;
+}
 ```
 
-We also added a line where the character is jumping to play a random jump sound effect.
+We also want to play a sound when the player jumps.  This is also an array so it uses the same pattern.
