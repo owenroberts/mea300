@@ -103,8 +103,7 @@ title: Schedule
 	- Selecting random sounds/images
 	- Setting colliders
 	- Object distribution
-	- [Lab](labs/{{site.semester}}/week7/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week7/){:target="blank"} 
-	<!-- & [notes](labs/{{site.semester}}/week7/lab.html) -->
+	- [Lab](labs/{{site.semester}}/week7/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week7/){:target="blank"} & [notes](labs/{{site.semester}}/week7/lab.html)
 - **Assignment 6: Sound Effects**
 	- Create sounds for the game
 		- Game start
