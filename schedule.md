@@ -117,6 +117,7 @@ title: Schedule
 ## Week 8/9 **Midterm**
 - In class workshop
 - See Blackboard for rubric
+- Create an [itch.io](https://itch.io/){:target="blank"} account
 - **Lab:** Rewards
 	- [Lab](labs/{{site.semester}}/week8/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week8/){:target="blank"}
 
