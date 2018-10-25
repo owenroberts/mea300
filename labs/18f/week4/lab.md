@@ -1,8 +1,7 @@
 ---
 layout: notes
-title: MEA 300
+title: Lab Notes
 week: 5
-dek: Lab Notes
 ---
 
 Our program is getting pretty long so I'm only going to go over new stuff this week instead of recapping everything.

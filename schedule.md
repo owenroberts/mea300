@@ -119,7 +119,7 @@ title: Schedule
 - See Blackboard for rubric
 - Create an [itch.io](https://itch.io/){:target="blank"} account
 - **Lab:** Rewards
-	- [Lab](labs/{{site.semester}}/week8/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week8/){:target="blank"}
+	- [Lab](labs/{{site.semester}}/week8/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week8/){:target="blank"} & [notes](labs/{{site.semester}}/week8/lab.html)
 
 ## Week 10 **User Testing**
 - [User Testing](week12/)

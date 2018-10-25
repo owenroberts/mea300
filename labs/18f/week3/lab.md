@@ -1,8 +1,7 @@
 ---
 layout: notes
-title: MEA 300
+title: Lab Notes
 week: 3
-dek: Lab Notes
 ---
 
 This week we added a platform for the character to stand on and some basic physics to make the character move.  We also added some random scenic elements, including foreground elements (trees or shrubs or grass) and moving background elements, clouds.

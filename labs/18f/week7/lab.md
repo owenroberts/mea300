@@ -1,8 +1,7 @@
 ---
 layout: notes
-title: MEA 300
+title:  Lab notes
 week: 7
-dek: Lab Notes
 ---
 
 This week we added audio using the [jfxr](https://jfxr.frozenfractal.com/) app.  Adding sound requires creating the sound files, downloading them and adding them to the project folder, then loading the files in *assets.js* and playing the sounds at the right points in *scenes.js* and *game.js*.  I'll review each part here.

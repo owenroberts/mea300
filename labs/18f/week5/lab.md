@@ -1,8 +1,7 @@
 ---
 layout: notes
-title: MEA 300
+title: Lab Notes
 week: 5
-dek: Lab Notes
 ---
 
 We made a pretty significant update this week by adding the game speed and moving all of our sprites to make the game appear somewhat functional!  Let's take a look at how we did it.

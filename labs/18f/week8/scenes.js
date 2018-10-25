@@ -62,6 +62,10 @@ function died() {
     while (arrows.length > 0) {
         arrows[0].remove();
     }
+
+    while (hearts.length > 0) {
+        hearts[0].remove();
+    }
 }
 
 function keyPressed() {

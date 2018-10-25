@@ -1,8 +1,7 @@
 ---
 layout: notes
-title: MEA 300
+title: Lab Notes
 week: 2
-dek: Lab Notes
 ---
 
 This week we added a main character into the game and gave it some controls with the keyboard.  We covered a bunch of new topics including variables/data storage, object methods, defined functions, logic and events.  Here I'll walk through the code we wrote and talk more in depth about some of these concepts.

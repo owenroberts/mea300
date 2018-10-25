@@ -1,8 +1,7 @@
 ---
 layout: notes
-title: MEA 300
+title: Lab Notes
 week: 6
-dek: Lab Notes
 ---
 
 This was a big wee, we made a ton of changes, mostly to organize the code and make it easier to update and tweak the game mechanics and setup.  We started by separating the main parts of the game into different files.  We'll go over those files and the changes we made in them.
