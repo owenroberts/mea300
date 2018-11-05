@@ -131,6 +131,9 @@ title: Schedule
 ## Week 11 **User Testing Workshop**
 - [Emergence & Progression](notes/emergence)
 - Test classmates games and fill out forms in class
+- **Assignment 8: User Testing Report**
+	- Summarize feedback in Medium post
+	- Choose three things to work on for final
 
 
 <!-- 
