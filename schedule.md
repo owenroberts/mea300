@@ -122,7 +122,15 @@ title: Schedule
 	- [Lab](labs/{{site.semester}}/week8/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week8/){:target="blank"} & [notes](labs/{{site.semester}}/week8/lab.html)
 
 ## Week 10 **User Testing**
-- [User Testing](week12/)
+- [Browser Games](notes/browser)
+- [User Testing](notes/testing)
+- **Assignment 7: User Testing Form**
+	- Create a user testing form
+	- Send the game and form to 5 users not in the class
+
+## Week 11 **User Testing Workshop**
+- [Emergence & Progression](notes/emergence)
+- Test classmates games and fill out forms in class
 
 
 <!-- 
@@ -131,7 +139,7 @@ title: Schedule
  
 ## Week 10 **Browser Games**
 - Present Midterm
-- [Browser Games](week10/)
+
 - **Lab**
 	- Physics
 	- [Lab](week10/lab/) & [code](https://github.com/owenroberts/mea300/tree/master/week10/lab)
@@ -141,7 +149,6 @@ title: Schedule
 	- What three features of your game are most important/unique?
 
 ## Week 11 **Emergence & Progression**
-- [Emergence & Progression](week11/)
 - **Lab**
 	- Levels
 	- Resetting game
