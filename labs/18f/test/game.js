@@ -19,7 +19,7 @@ function game() {
                 platform.remove();
             }
             platform.position.x = width + platform.width/2;
-            platform.position.y += random(-50, 50);
+            platform.position.y += random(-platformYChange, platformYChange);
         }
     }
     
@@ -34,12 +34,12 @@ function game() {
         player.isJumping = true;
     }
 
-    // if (keyDown(LEFT_ARROW)) {
-    //     player.velocity.x -= 0.5;
-    // }
-    // if (keyDown(RIGHT_ARROW)) {
-    //     player.velocity.x += 0.5;
-    // }
+    if (keyDown(LEFT_ARROW)) {
+        player.position.x -= 2;
+    }
+    if (keyDown(RIGHT_ARROW)) {
+        player.position.x += 2;
+    }
 
     // if (player.velocity.x > 0) {
     //     player.velocity.x -= 0.1;
@@ -51,6 +51,11 @@ function game() {
     // arrows hit player
     arrows.overlap(player, function (arrow) {
         // arrow.remove();
+
+        var hit = createSprite(arrow.position.x, arrow.position.y);
+        hit.addAnimation('default', arrow_hit_animation);
+        hit.life = 10;
+
         arrow.position.x = random(width, width * 3);
         player.health--;
         if (player.health == 0) {
@@ -93,6 +98,19 @@ function game() {
     }
 
 //    camera.position.y = player.position.y;
+
+    /* make game harder */
+    if (counter >= nextLevel) {
+        console.log('next level')
+        counter = 0;
+        platformSpeed += 0.05;
+        platformYChange += 5;
+        spawnArrow();
+        for (let i = 0; i < platforms.length; i++) {
+            platforms[i].velocity.x = -platformSpeed;
+        }
+    }
+    counter++;
     
     drawSprites();
 

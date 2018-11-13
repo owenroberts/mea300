@@ -4,6 +4,10 @@ var speed = 6;
 var jump_speed = speed * 3;
 var GRAVITY = 1;
 
+/* levels */
+var counter = 0;
+var nextLevel = 100;
+
 var gameWidth = 640;
 var gameHeight = 360;
 
@@ -11,7 +15,7 @@ var gameHeight = 360;
 var numPlatforms = 3;
 var platformYStart = 250;
 var platformXStart = 640;
-var platformYChange = 100;
+var platformYChange = 10;
 var platformSpeed = speed;
 
 // scenery 

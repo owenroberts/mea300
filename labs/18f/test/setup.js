@@ -25,6 +25,13 @@ function setup() {
 
 function build() {
 
+    counter = 0;
+
+    platformSpeed = speed;
+    for (let i = 0; i < platforms.length; i++) {
+        platforms[i].velocity.x = -platformSpeed;
+    }
+
     // set up platform
     var startPlatform = createSprite(256, 300);
     // startPlatform.debug = true;

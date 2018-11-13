@@ -131,17 +131,18 @@ title: Schedule
 ## Week 11 **User Testing Workshop**
 - [Emergence & Progression](notes/emergence)
 - Test classmates games and fill out forms in class
+- **Lab**
 - **Assignment 8: User Testing Report**
 	- Summarize feedback in Medium post
 	- Choose three things to work on for final
 
 
 <!-- 
- 
 
- 
-## Week 10 **Browser Games**
-- Present Midterm
+2018 labs
+- moving the character
+- reaction sprites
+- progression
 
 - **Lab**
 	- Physics

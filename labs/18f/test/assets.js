@@ -16,6 +16,7 @@ var trees, tree_img;
 // obstacles
 var arrows; // group
 var arrow_sheet, arrow_animation;
+var arrow_hit_sheet, arrow_hit_animation;
 
 // rewards 
 var hearts;
@@ -41,4 +42,7 @@ function preload() {
 
     arrow_sheet = loadSpriteSheet("sprites/obstacles/arrow.png", 32, 32, 3);
     arrow_animation = loadAnimation(arrow_sheet);
+
+    arrow_hit_sheet = loadSpriteSheet("sprites/obstacles/arrow_hit.png", 32, 32, 5);
+    arrow_hit_animation = loadAnimation(arrow_hit_sheet);
 }
