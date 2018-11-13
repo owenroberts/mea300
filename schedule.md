@@ -13,7 +13,9 @@ title: Schedule
 	- Basic HTML/CSS page
 	- [Download p5.js](https://github.com/processing/p5.js/releases/download/0.5.14/p5.min.js)
 	- [Download p5.play](https://github.com/molleindustria/p5.play/archive/master.zip)
-	- [Lab](labs/{{site.semester}}/week1/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week1/){:target="blank"} & [notes](labs/{{site.semester}}/week1/lab.html)
+	- [Lab](labs/{{site.semester}}/week1/){:target="blank"} 
+	& [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week1/){:target="blank"} 
+	& [notes](labs/{{site.semester}}/week1/lab.html)
 - **Assignment 1: Blog Response**
 	- Write a post on the class blog
 	- Choose a game that you are currently playing or played recently
@@ -31,7 +33,9 @@ title: Schedule
 	- Sprites, image and animation
 	- Events and input
 	- Booleans
-	- [Lab](labs/{{site.semester}}/week2/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week2/){:target="blank"} & [notes](labs/{{site.semester}}/week2/lab.html)
+	- [Lab](labs/{{site.semester}}/week2/){:target="blank"} 
+	& [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week2/){:target="blank"} 
+	& [notes](labs/{{site.semester}}/week2/lab.html)
 - **Assignment 2: Character Design**
 	- Concept design for main character in video game
 	- At least 5 sketches
@@ -46,7 +50,9 @@ title: Schedule
 - **Lab: Scenic Assets**
 	- Platform, foreground and background elements
 	- Random, more booleans, basic physics
-	- [Lab](labs/{{site.semester}}/week3/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week3/){:target="blank"} & [notes](labs/{{site.semester}}/week3/lab.html)
+	- [Lab](labs/{{site.semester}}/week3/){:target="blank"} 
+	& [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week3/){:target="blank"} 
+	& [notes](labs/{{site.semester}}/week3/lab.html)
 - **Assignment 3: Scenic Assets**
 	- Design scenic assets for your game
 	- Create at least 1 background element (non interactive)
@@ -62,7 +68,9 @@ title: Schedule
 	- Groups, loops
 	- Collisions, death
 	- "wrapping" sprites
-	- [Lab](labs/{{site.semester}}/week4/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week4/){:target="blank"} & [notes](labs/{{site.semester}}/week4/lab.html)
+	- [Lab](labs/{{site.semester}}/week4/){:target="blank"} 
+	& [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week4/){:target="blank"} 
+	& [notes](labs/{{site.semester}}/week4/lab.html)
 - **Assignment 4: Obstacles**
 	- Design 5 potential *obstacles* for your game
 	- Sketches/pixel art/Illustrator art all okay
@@ -77,7 +85,9 @@ title: Schedule
 - **Lab**
 	- Distributing platforms
 	- Camera position
-	- [Lab](labs/{{site.semester}}/week5/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week5/){:target="blank"} & [notes](labs/{{site.semester}}/week5/lab.html)
+	- [Lab](labs/{{site.semester}}/week5/){:target="blank"} 
+	& [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week5/){:target="blank"} 
+	& [notes](labs/{{site.semester}}/week5/lab.html)
 - **Assignment 5: Rewards**
 	- Design 5 potential *rewards* for your game
 	- Same idea as Assignment 4
@@ -92,7 +102,9 @@ title: Schedule
 	- Start and death scene
 	- Build and reset functions
 	- Text
-	- [Lab](labs/{{site.semester}}/week6/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week6/){:target="blank"} & [notes](labs/{{site.semester}}/week6/lab.html)
+	- [Lab](labs/{{site.semester}}/week6/){:target="blank"} 
+	& [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week6/){:target="blank"} 
+	& [notes](labs/{{site.semester}}/week6/lab.html)
 
 	
 ## Week 7 **Sound**
@@ -103,7 +115,9 @@ title: Schedule
 	- Selecting random sounds/images
 	- Setting colliders
 	- Object distribution
-	- [Lab](labs/{{site.semester}}/week7/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week7/){:target="blank"} & [notes](labs/{{site.semester}}/week7/lab.html)
+	- [Lab](labs/{{site.semester}}/week7/){:target="blank"} 
+	& [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week7/){:target="blank"} 
+	& [notes](labs/{{site.semester}}/week7/lab.html)
 - **Assignment 6: Sound Effects**
 	- Create sounds for the game
 		- Game start
@@ -119,7 +133,9 @@ title: Schedule
 - See Blackboard for rubric
 - Create an [itch.io](https://itch.io/){:target="blank"} account
 - **Lab:** Rewards
-	- [Lab](labs/{{site.semester}}/week8/){:target="blank"} & [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week8/){:target="blank"} & [notes](labs/{{site.semester}}/week8/lab.html)
+	- [Lab](labs/{{site.semester}}/week8/){:target="blank"} 
+	& [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week8/){:target="blank"} 
+	& [notes](labs/{{site.semester}}/week8/lab.html)
 
 ## Week 10 **User Testing**
 - [Browser Games](notes/browser)
@@ -131,7 +147,10 @@ title: Schedule
 ## Week 11 **User Testing Workshop**
 - [Emergence & Progression](notes/emergence)
 - Test classmates games and fill out forms in class
-- **Lab**
+- **Lab: Progression**
+	- [Lab](labs/{{site.semester}}/week11/){:target="blank"} 
+	& [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week11/){:target="blank"} 
+	<!-- & [notes](labs/{{site.semester}}/week8/lab.html) -->
 - **Assignment 8: User Testing Report**
 	- Summarize feedback in Medium post
 	- Choose three things to work on for final
