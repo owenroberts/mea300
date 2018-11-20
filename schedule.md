@@ -150,7 +150,7 @@ title: Schedule
 - **Lab: Progression**
 	- [Lab](labs/{{site.semester}}/week11/){:target="blank"} 
 	& [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week11/){:target="blank"} 
-	<!-- & [notes](labs/{{site.semester}}/week8/lab.html) -->
+	<!-- & [notes](labs/{{site.semester}}/week11/lab.html) -->
 - **Assignment 8: User Testing Report**
 	- Summarize feedback in Medium post
 	- Choose three things to work on for final
@@ -160,6 +160,9 @@ title: Schedule
 	- [Free Music Archive](http://freemusicarchive.org/){:target="blank"} 
 	- [Wikimedia](https://commons.wikimedia.org/wiki/Category:Audio_files_of_music){:target="blank"} 
 	- [Audiotool](https://www.audiotool.com/app){:target="blank"}
+	- [Lab](labs/{{site.semester}}/week12/){:target="blank"} 
+	& [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week12/){:target="blank"} 
+	<!-- & [notes](labs/{{site.semester}}/week12/lab.html) -->
 
 
 <!-- 
