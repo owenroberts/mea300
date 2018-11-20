@@ -155,6 +155,12 @@ title: Schedule
 	- Summarize feedback in Medium post
 	- Choose three things to work on for final
 
+## Week 12 **Background Music**
+- **Lab: Background Music**
+	- [Free Music Archive](http://freemusicarchive.org/){:target="blank"} 
+	- [Wikimedia](https://commons.wikimedia.org/wiki/Category:Audio_files_of_music){:target="blank"} 
+	- [Audiotool](https://www.audiotool.com/app){:target="blank"}
+
 
 <!-- 
 
