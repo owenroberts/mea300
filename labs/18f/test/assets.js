@@ -4,6 +4,7 @@
 var idle_sheet, idle_animation;
 var run_sheet, run_animation;
 var jump_sheet, jump_animation;
+var glider_sheet, glider_animation;
 
 // platform
 var platforms;
@@ -22,6 +23,9 @@ var arrow_hit_sheet, arrow_hit_animation;
 var hearts;
 var heart_sheet, heart_animation;
 
+var gliders;
+var glider_sheet, glider_animation;
+
 function preload() {
     idle_sheet = loadSpriteSheet("sprites/main_character/main_character_idle.png", 128, 128, 16);
     idle_animation = loadAnimation(idle_sheet);
@@ -31,6 +35,10 @@ function preload() {
 
     jump_sheet = loadSpriteSheet("sprites/main_character/main_character_jumping.png", 128, 128, 30);
     jump_animation = loadAnimation(jump_sheet);
+
+    glider_sheet = loadSpriteSheet("sprites/main_character/main_character_glider.png", 128, 128, 8);
+    glider_animation = loadAnimation(glider_sheet);
+    glider_animation.frameDelay = 4;
 
     platform_img = loadImage("sprites/scenery/platform.png");
     start_platform_img = loadImage("sprites/scenery/start_platform.png");
@@ -45,4 +53,7 @@ function preload() {
 
     arrow_hit_sheet = loadSpriteSheet("sprites/obstacles/arrow_hit.png", 32, 32, 5);
     arrow_hit_animation = loadAnimation(arrow_hit_sheet);
+
+    glider_sheet = loadSpriteSheet("sprites/rewards/glider.png", 32, 32, 5);
+    glider_animation = loadAnimation(glider_sheet);
 }

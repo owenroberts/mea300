@@ -22,9 +22,25 @@ function game() {
             platform.position.y += random(-platformYChange, platformYChange);
         }
     }
+
+    if (player.gliders > 0 && !player.isGliding) {
+        if (keyDown('z')) {
+            player.isGliding = true;
+            player.gliders--;
+            gliderCounter = gliderDuration;
+        }
+    }
     
     if (!player.isGrounded) {
-        player.velocity.y += GRAVITY;
+        if (player.isGliding) {
+            gliderCounter--;
+            player.velocity.y += gliderGravity;
+            if (gliderCounter == 0) {
+                player.isGliding = false;
+            }
+        } else {
+            player.velocity.y += GRAVITY;
+        }
     }
     
     
@@ -70,6 +86,12 @@ function game() {
         player.health++;
     });
 
+    // player gets heart
+    gliders.overlap(player, function (glider) {
+        glider.remove();
+        player.gliders++;
+    });
+
     // wrap arrows back to the beginning 
     for (var i = 0; i < arrows.length; i++) {
         if (arrows[i].position.x < -50) {
@@ -109,6 +131,15 @@ function game() {
         for (let i = 0; i < platforms.length; i++) {
             platforms[i].velocity.x = -platformSpeed;
         }
+
+        // spawn glider
+        var x = gliderXStart;
+        var y = random(gliderYMin, gliderYMax);
+        var glider = createSprite(x, y);
+        glider.addAnimation('default', glider_animation);
+        glider.velocity.x = -gliderSpeed;
+        gliders.add(glider);
+
     }
     counter++;
     
@@ -118,5 +149,13 @@ function game() {
     textFont('Comic Sans MS');
     textSize(20);
     fill(0);
+    
+    // health
     text(`Lives: ${player.health}`, 20, 40);
+
+    // gliders
+    if (player.gliders > 0) {
+        text(`Gliders: ${player.gliders}`, gameWidth - 100, 40);
+        text(`Press Z to glide`, gameWidth - 100, 80);
+    }
 }

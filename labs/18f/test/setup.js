@@ -10,10 +10,13 @@ function setup() {
     player.addAnimation("idle", idle_animation);
     player.addAnimation("run", run_animation);
     player.addAnimation("jump", jump_animation);
+    player.addAnimation("glider", glider_animation);
     player.isJumping = false;
     player.isGrounded = false;
     player.scale = 0.5;
     player.health = 3;
+    player.gliders = 0;
+    player.isGliding = false;
 //    player.velocity.x = 5;
     
     platforms = new Group();
@@ -21,6 +24,7 @@ function setup() {
     trees = new Group();
     arrows = new Group();
     hearts = new Group();
+    gliders = new Group();
 }
 
 function build() {
