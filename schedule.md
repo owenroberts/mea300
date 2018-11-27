@@ -164,6 +164,10 @@ title: Schedule
 	& [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week12/){:target="blank"} 
 	<!-- & [notes](labs/{{site.semester}}/week12/lab.html) -->
 
+## Week 13 **Labs**
+- New Rewards
+	- [Lab](labs/{{site.semester}}/week13/){:target="blank"} 
+	& [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week13/){:target="blank"} 
 
 <!-- 
 
