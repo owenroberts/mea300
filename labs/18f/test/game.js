@@ -23,21 +23,18 @@ function game() {
         }
     }
 
-    if (player.gliders > 0 && !player.isGliding) {
-        if (keyDown('z')) {
-            player.isGliding = true;
-            player.gliders--;
-            gliderCounter = gliderDuration;
-        }
-    }
+    // player gets glider
+    gliders.overlap(player, function (glider) {
+        glider.remove();
+        gliderCount = gliderDuration;
+        player.velocity.y = min(0, player.velocity.y);
+    });
+
     
     if (!player.isGrounded) {
-        if (player.isGliding) {
-            gliderCounter--;
-            player.velocity.y += gliderGravity;
-            if (gliderCounter == 0) {
-                player.isGliding = false;
-            }
+        if (gliderCount > 0) {
+            gliderCount--;
+            // player.velocity.y += gliderGravity;
         } else {
             player.velocity.y += GRAVITY;
         }
@@ -86,11 +83,7 @@ function game() {
         player.health++;
     });
 
-    // player gets heart
-    gliders.overlap(player, function (glider) {
-        glider.remove();
-        player.gliders++;
-    });
+    
 
     // wrap arrows back to the beginning 
     for (var i = 0; i < arrows.length; i++) {

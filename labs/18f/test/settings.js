@@ -43,10 +43,10 @@ var heartYMax = 200;
 var heartSpeed = speed * 0.5;
 
 // glider
-var gliderGravity = 0.1;
-var gliderDuration = 30;
+var gliderGravity = 0.5;
+var gliderDuration = 60;
 var gliderCount = 0;
 var gliderXStart = gameWidth;
-var gliderYMin = 100;
-var gliderYMax = 200;
+var gliderYMin = 50;
+var gliderYMax = 100;
 var gliderSpeed = speed * 0.25;
