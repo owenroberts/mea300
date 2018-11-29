@@ -167,7 +167,10 @@ title: Schedule
 ## Week 13 **Labs**
 - New Rewards
 	- [Lab](labs/{{site.semester}}/week13/){:target="blank"} 
-	& [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week13/){:target="blank"} 
+	& [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week13/){:target="blank"}
+- Graphics + Sound for hitting obstacle/reward
+	- [Lab](labs/{{site.semester}}/week14/){:target="blank"} 
+	& [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week14/){:target="blank"}
 
 <!-- 
 
