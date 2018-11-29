@@ -150,7 +150,7 @@ title: Schedule
 - **Lab: Progression**
 	- [Lab](labs/{{site.semester}}/week11/){:target="blank"} 
 	& [code](https://github.com/owenroberts/mea300/tree/master/labs/{{site.semester}}/week11/){:target="blank"} 
-	<!-- & [notes](labs/{{site.semester}}/week11/lab.html) -->
+	& [notes](labs/{{site.semester}}/week11/lab.html)
 - **Assignment 8: User Testing Report**
 	- Summarize feedback in Medium post
 	- Choose three things to work on for final

@@ -58,29 +58,12 @@ function died() {
     player.livesLeft = 3;
     
     // destroy other sprites
-    while (platforms.length > 0) {
-        platforms[0].remove();
-    }
-    
-    while (clouds.length > 0) {
-        clouds[0].remove();
-    }
-    
-    while (trees.length > 0) {
-        trees[0].remove();
-    }
-    
-    while (arrows.length > 0) {
-        arrows[0].remove();
-    }
-    
-    while (antiClouds.lenth > 0) {
-        antiClouds[0].remove();
-    }
-    
-    while (hearts.length > 0) {
-        hearts[0].remove();
-    }
+    platforms.removeSprites();
+    clouds.removeSprites();
+    trees.removeSprites();
+    arrows.removeSprites();
+    antiClouds.removeSprites();
+    hearts.removeSprites();
 }
 
 function keyPressed() {
