@@ -45,7 +45,6 @@ function game() {
         if (antiCounter > 0) {
             player.velocity.y = 0.1;
             antiCounter--;
-//            console.log('anti gravity', antiCounter);
             player.changeAnimation("float");
             
             if (keyDown('right')) {
