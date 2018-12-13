@@ -165,7 +165,7 @@ if (keyDown('left')) {
 }
 ```
 
-I also added the ability to move the player left and right while they are floating.  That goes inside the `if (antiCounter > 0)` statement. 
+I also added the ability to move the player left and right while they are floating.  That goes inside the `if (antiCounter > 0) { }` statement. 
 
 ```
 /* ui */
