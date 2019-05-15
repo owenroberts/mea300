@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <title>My First Game</title>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <h1>My First Game</h1>
+        <p>by Daniela</p>
+    </div>
+    
+    <!-- libraries -->
+    <script src="p5.min.js"></script>
+    <script src="p5.play.js"></script>
+    <script src="p5.sound.js"></script>
+    
+    <!-- game files -->
+    <script src="settings.js"></script>
+    <script src="assets.js"></script>
+    <script src="setup.js"></script>
+    <script src="scenes.js"></script>
+    <script src="game.js"></script>
+    <script>
+        document.addEventListener('keydown', ev => {
+            if (ev.which == 32)
+                ev.preventDefault();
+        });
+    </script>
+</body>
+</html>

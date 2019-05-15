@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+    color: lightblue;
+    font-family: cursive;
+    font-size: 18px;
+}
+
+h1{
+    text-align: center;
+}
+
+p {
+    background-color: black;
+    color:lightblue;
+    text-align: center;
+}
+

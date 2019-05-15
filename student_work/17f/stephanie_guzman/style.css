@@ -1,0 +1,14 @@
+body {
+    background-color:darkred;
+    color:black
+    font-family:monaco;
+    font-size:18 px;
+}
+h1 {color: red;
+    text-align:center;
+}
+p{
+    background-color: lightcoral;
+    color: blue;
+    text-align: center;
+}

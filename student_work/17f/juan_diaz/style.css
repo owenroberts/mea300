@@ -1,0 +1,14 @@
+body {
+    background-color:black;
+    color:white;
+    font-family: monaco;
+    font-size: 18px;
+}
+h1 {
+    text-align: center;
+}
+p {
+    background-color:white;
+    color:black;
+    text-align:center;
+}

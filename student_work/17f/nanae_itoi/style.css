@@ -1,0 +1,13 @@
+body {
+	background-color:gainsboro;
+	color:firebrick;
+    font-family: 'Monoton', cursive;
+}
+h1 {
+	text-align:center;
+}
+p {
+	background-color:white;
+	color:rosybrown;
+	text-align:center;
+}

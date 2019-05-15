@@ -1,0 +1,25 @@
+body {
+    background-color:black;
+    color:white;
+    font-family: monaco;
+    font-size: 18px;
+}
+#canvas { background:url(background.jpg) }
+
+#overlay{
+height: 591px;
+width: 648px;
+position:absolute; /*You may also use fixed depending on your needs.*/
+left:0;
+top:0; /*If you want it at the bottom you probably want bottom:0 instead*/
+z-index: 0;
+}
+
+#canvas{
+  color: #0cff15; 
+  background-image: url("background.jpg");
+  -webkit-background-image: url("background.jpg");
+  border:1px solid black;
+  width:500px;
+  height:500px;
+}

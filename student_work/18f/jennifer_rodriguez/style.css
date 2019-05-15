@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'myfont';
+    src: url(font/Myfont-Regular.ttf);
+}
+
+body {
+    background-color: darkred;
+    color: white;
+    font-family:'myfont', menlo;
+}
